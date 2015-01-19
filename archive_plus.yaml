@@ -1,0 +1,17 @@
+enabled: true                 # Set to false to disable this plugin completely
+built_in_css: true            # Use built-in CSS of the plugin
+date_display_format: 'F Y'    # Date format to display e.g. January 2014
+show:
+    counter: true             # Toggle to show number of items before the link
+    year: true                # Toggle to show year
+    month: true               # Toggle to show month
+limit:
+    year: 2                   # Limit to show only the last n years
+    month: 12                 # Limit to show only the last n months
+    items: 40                 # Limit to show only the last n items
+order:
+    by: date                  # Ordering of items
+    dir: desc                 # Ordering of items (asc or desc)
+filter_combinator: and        # The filter combinator to use to combine several filters
+filters:                      # Filter to select which items should be shown
+    category: blog

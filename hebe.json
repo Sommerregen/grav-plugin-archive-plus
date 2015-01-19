@@ -1,0 +1,15 @@
+{
+   "project":"grav-plugin-archive-plus",
+   "platforms":{
+      "grav":{
+         "nodes":{
+            "plugin":[
+               {
+                  "source":"/",
+                  "destination":"/user/plugins/archive_plus"
+               }
+            ]
+         }
+      }
+   }
+}
