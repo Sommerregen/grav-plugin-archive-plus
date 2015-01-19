@@ -1,0 +1,94 @@
+{# Setup block #}
+{% if not (archive_plus.show.year or archive_plus.show.month) %}
+    <ul class="archive-plus last">
+{% else %}
+    <ul class="archive-plus">
+{% endif %}
+
+{# Iterate over all data #}
+{% for year,months in archive_plus.data %}
+    {# Set current year #}
+    {% set year_index = loop.index %}
+    {% if archive_plus.current.year == year %}
+        {% set checked = 'checked="checked" ' %}
+    {% else %}
+        {% set checked = '' %}
+    {% endif %}
+
+    {# Toggle year + BEGIN: Wrap list #}
+    {% if archive_plus.show.year %}
+        <li>
+            <input type="checkbox" id="input-archive-{{ year_index }}" {{ checked }}/>
+            {% if archive_plus.show.counter %}
+                {# Calculate total number of posts #}
+                {% set count = 0 %}
+                {% for month,items in months %}
+                    {% set count = count + items|length %}
+                {% endfor %}
+
+                <label for="input-archive-{{ year_index }}" class="label counter">{{ count }}</label>
+        {% else %}
+        <label for="input-archive-{{ year_index }}"></label>
+            {% endif %}
+
+            <a href="{{ base_url }}/archive:{{ year|e('url') }}">
+        <span class="archive_year">{{ year }}</span>
+        </a>
+
+        {% if archive_plus.show.month %}
+            <ul>
+        {% else %}
+            <ul class="last">
+        {% endif %}
+  {% endif %}
+
+    {% for month,items in months %}
+        {# Set current month #}
+        {% if (archive_plus.current.year == year) and (archive_plus.current.month == month) %}
+            {% set checked = 'checked="checked" ' %}
+        {% else %}
+            {% set checked = '' %}
+        {% endif %}
+
+        {# Toggle month + BEGIN: Wrap list #}
+        {% if archive_plus.show.month %}
+            <li>
+            <input type="checkbox" id="input-archive-{{ year_index }}-{{ loop.index }}" {{ checked }}/>
+            {% if archive_plus.show.counter %}
+                <label for="input-archive-{{ year_index }}-{{ loop.index }}" class="label counter">{{ items|length }}</label>
+            {% else %}
+                <label for="input-archive-{{ year_index }}-{{ loop.index }}"></label>
+            {% endif %}
+
+            <a href="{{ base_url }}/archive:{{ month|date('M_Y')|lower|e('url') }}">
+                <span class="archive_month">{{ month }}</span>
+            </a>
+
+            <ul class="last">
+        {% endif %}
+
+        {% for item in items %}
+            {# Label active link #}
+            {% set active = '' %}
+            {% if archive_plus.current.page.id == item.id %}
+                {% set active = ' class="active"' %}
+            {% endif %}
+
+            <li>
+                <a href="{{ base_url~item.route }}"{{ active }}>{{ item.title }}</a>
+            </li>
+        {% endfor %}
+
+        {# END: Wrap list (month) #}
+    {% if archive_plus.show.month %}
+        </ul></li>
+    {% endif %}
+
+    {% endfor %}
+
+    {# END: Wrap list (year) #}
+  {% if archive_plus.show.year %}
+    </ul></li>
+  {% endif %}
+{% endfor %}
+</ul>

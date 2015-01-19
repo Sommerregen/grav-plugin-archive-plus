@@ -1,0 +1,152 @@
+name: Archive Plus
+version: 1.0.0
+description: "The **Archive Plus** plugin is an enhanced version of the [Grav Archives plugin](https://github.com/getgrav/grav-plugin-archives) with more configuration options and the ability to show a blogger like hierarchical archive menu for links grouped by month and/or year."
+icon: university
+author:
+  name: Benjamin Regler
+  email: sommerregen@benjamin-regler.de
+homepage: https://github.com/sommerregen/grav-plugin-archive-plus
+docs: https://github.com/sommerregen/grav-plugin-archive-plus/blob/master/README.md
+keywords: archive, plugin, blog, month, year, date, navigation, history
+bugs: https://github.com/sommerregen/grav-plugin-archive-plus/issues
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 1
+      options:
+          1: Enabled
+          0: Disabled
+      validate:
+           type: bool
+
+    built_in_css:
+      type: toggle
+      label: Use built in CSS
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    date_display_format:
+      type: select
+      size: medium
+      classes: fancy
+      label: Date Format
+      default: 'F Y'
+      options:
+        'F' : "January"
+        'F Y' : "January 2014"
+        'F jS Y': "January 1st 2014"
+        'l jS of F': "Monday 1st of January"
+        'D, m M Y': "Mon, 01 Jan 2014"
+        'd-m-y': "01-01-14"
+        'jS M Y': "10th Feb 2014"
+
+    show.counter:
+      type: toggle
+      label: Show Count
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    show.year:
+      type: toggle
+      label: Show Year
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    show.month:
+      type: toggle
+      label: Show Month
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    limit.year:
+      type: text
+      size: x-small
+      label: Year Limit
+      default: 2
+      help: "Set to zero to switch off year limit."
+      validate:
+        type: number
+        min: 0
+
+    limit.month:
+      type: text
+      size: x-small
+      label: Month Limit
+      default: 12
+      help: "Set to zero to switch off month limit."
+      validate:
+        type: number
+        min: 0
+
+    limit.items:
+      type: text
+      size: x-small
+      label: Items Limit
+      default: 40
+      help: "Set to zero to switch off item limit."
+      validate:
+        type: number
+        min: 0
+
+    order.dir:
+      type: toggle
+      label: Order Direction
+      highlight: asc
+      default: desc
+      options:
+        asc: Ascending
+        desc: Descending
+
+    order.by:
+      type: select
+      size: medium
+      classes: fancy
+      label: Order Type
+      options:
+        default: Default - based on folder name
+        folder: Folder - based on prefix-less folder name
+        title: Title - based on title field in header
+        date: Date - based on date field in header
+
+    filters:
+      type: text
+      label: Category filter
+      help: Comma separated list of category names
+      validate:
+        type: commalist
+
+    filter_combinator:
+      type: select
+      size: medium
+      classes: fancy
+      label: Filter Combinator
+      default: and
+      options:
+        and: And - Boolean &&
+        or: Or - Boolean ||
