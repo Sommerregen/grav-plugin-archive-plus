@@ -1,6 +1,6 @@
 <?php
 /**
- * Archive Plus 1.0
+ * Archive Plus 1.0.1
  *
  * An enhanced version of the Grav Archives plugin with more
  * configuration options and the ability to show a blogger-like
@@ -9,7 +9,7 @@
  * Licensed under MIT, see LICENSE.
  *
  * @package     Archive Plus
- * @version     1.0
+ * @version     1.0.1
  * @link        <https://github.com/sommerregen/grav-plugin-archive-plus>
  * @author      Benjamin Regler <sommergen@benjamin-regler.de>
  * @copyright   2015, Benjamin Regler
@@ -62,11 +62,14 @@ class ArchivePlusPlugin extends Plugin {
             return;
         }
 
-        if ( $this->config->get('plugins.archive_plus.enabled') ) {
-            // Emulate Archives plugin; switch it off, if present
-            $this->config->set('plugins.archives.enabled', FALSE);
-            $this->config->set('plugins.archives.emulated', TRUE);
+        // Activate plugin only if 'enabled' option is set true
+        if ( !$this->config->get('plugins.archive_plus.enabled') ) {
+            return;
         }
+
+        // Emulate Archives plugin; switch it off, if present
+        $this->config->set('plugins.archives.enabled', FALSE);
+        $this->config->set('plugins.archives.emulated', TRUE);
 
         // Dynamically add the needed taxonomy types to the taxonomies config
         $taxonomy_config = array_merge((array)
