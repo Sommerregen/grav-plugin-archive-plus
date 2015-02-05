@@ -17,27 +17,13 @@ See how the `Archive Plus` will look like on your site:
 
 Some more screenshots of the functionality can be found in the [assets folder](assets/).
 
-## Installation
+## Installation and Updates
 
-Installing the `Archive Plus` plugin can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the plugin with a simple terminal command, while the manual method enables you to do so via a zip file.
-
-### GPM Installation (Preferred)
-
-The simplest way to install this plugin is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's Terminal (also called the command line). From the root of your Grav install type:
-
-    bin/gpm install archive_plus
-
-This will install the `Archive Plus` plugin into your `/user/plugins` directory within Grav. Its files can be found under `/your/site/grav/user/plugins/archive_plus`.
-
-### Manual Installation
-
-To install this plugin, just download the zip version of this repository and unzip it under `/your/site/grav/user/plugins`. Then, rename the folder to `archive_plus`. You can find these files either on [GitHub](https://github.com/sommerregen/grav-plugin-archive-plus) or via [GetGrav.org](http://getgrav.org/downloads/plugins#archive_plus).
-
-You should now have all the plugin files under
+Installing or updating the `Archive Plus` plugin can be done in one of two ways. Using the GPM (Grav Package Manager) installation method or manual install or update method by downloading [this plugin](https://github.com/sommerregen/grav-plugin-archive-plus) and extracting all plugin files to
 
     /your/site/grav/user/plugins/archive_plus
 
->> NOTE: This plugin is a modular component for Grav which requires [Grav](http://github.com/getgrav/grav), the [Error](https://github.com/getgrav/grav-plugin-error) and [Problems](https://github.com/getgrav/grav-plugin-problems) plugins, and a theme to be installed in order to operate.
+For more informations, please check the [Installation and update guide](INSTALL.md).
 
 ## Usage
 
@@ -46,13 +32,19 @@ The `Archive Plus` plugin comes with some sensible default configuration, that a
 ### Config Defaults
 
 ```
+# Global plugin configurations
+
 enabled: true                 # Set to false to disable this plugin completely
 built_in_css: true            # Use built-in CSS of the plugin
+
+# Default values for Archive Plus configuration.
+
 date_display_format: 'F Y'    # Date format to display e.g. January 2014
 show:
     counter: true             # Toggle to show number of items before the link
     year: true                # Toggle to show year
     month: true               # Toggle to show month
+    items: true               # Toggle to show items
 limit:
     year: 2                   # Limit to show only the last n years
     month: 12                 # Limit to show only the last n months
@@ -81,29 +73,6 @@ You can now edit the override and tweak it however you prefer.
 
 >> Note: Don't touch or edit the template file [templates/partials/archives.html.twig](templates/partials/archives.html.twig) in the `templates/partials` folder! This file serves as a compatibility fallback for those themes which expect the Archives plugin to be installed.
 
-## Updating
-
-As development for `Archive Plus` continues, new versions may become available that add additional features and functionality, improve compatibility with newer Grav releases, and generally provide a better user experience. Updating `Archive Plus` is easy, and can be done through Grav's GPM system, as well as manually.
-
-### GPM Update (Preferred)
-
-The simplest way to update this plugin is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm). You can do this with this by navigating to the root directory of your Grav install using your system's Terminal (also called command line) and typing the following:
-
-    bin/gpm update archive_plus
-
-This command will check your Grav install to see if your `Archive Plus` plugin is due for an update. If a newer release is found, you will be asked whether or not you wish to update. To continue, type `y` and hit enter. The plugin will automatically update and clear Grav's cache.
-
-#### Manual Update
-
-Manually updating `Archive Plus` is pretty simple. Here is what you will need to do to get this done:
-
-* Delete the `your/site/user/plugins/archive_plus` directory.
-* Downalod the new version of the Archive Plus plugin from either [GitHub](https://github.com/sommerregen/grav-plugin-archive-plus) or [GetGrav.org](http://getgrav.org/downloads/plugins#archive_plus).
-* Unzip the zip file in `your/site/user/plugins` and rename the resulting folder to `archive_plus`.
-* Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
-
->> Note: Any changes you have made to any of the files listed under this directory will also be removed and replaced by the new set. Any files located elsewhere (for example a YAML settings file placed in `user/config/plugins`) will remain intact.
-
 ## Contributing
 
 You can contribute at any time! Before opening any issue, please search for existing issues and review the [guidelines for contributing](CONTRIBUTING.md).
@@ -116,13 +85,15 @@ After that please note:
 
 ### Support and donations
 
-If you like my project, feel free to support me, since donations will keep this project alive. You can [![Flattr](https://api.flattr.com/button/flattr-badge-large.png)][flattr] me or send me some bitcoins to **1HQdy5aBzNKNvqspiLvcmzigCq7doGfLM4** whenever you want. I herewith say 'thank you' for all your support you can give me :-)
+If you like my project, feel free to support me via [![Flattr](https://api.flattr.com/button/flattr-badge-large.png)][flattr] or by sending me some bitcoins to **1HQdy5aBzNKNvqspiLvcmzigCq7doGfLM4**.
+
+Thanks!
 
 ## License
 
 Copyright (c) 2015 [Benjamin Regler][github]. See also the list of [contributors] who participated in this project. A lot of credits also go to [Andy Miller](https://github.com/getgrav/) who wrote the Archives plugin, which this project is based on.
 
-Licensed for use under the terms of the [MIT license][mit-license] (see [LICENSE](LICENSE)).
+[Licensed](LICENSE) for use under the terms of the [MIT license][mit-license].
 
 
 [github]: https://github.com/sommerregen/ "GitHub account from Benjamin Regler"
@@ -131,5 +102,5 @@ Licensed for use under the terms of the [MIT license][mit-license] (see [LICENSE
 [flattr]: https://flattr.com/submit/auto?user_id=Sommerregen&url=https://github.com/sommerregen/grav-plugin-archive-plus "Flatter my GitHub project"
 
 [project]: https://github.com/sommerregen/grav-plugin-archive-plus
-[issues]: https://github.com/sommerregen/grav-plugin-archive-plus/issues "GitHub Issues for Grav Archive Plus"
-[contributors]: https://github.com/sommerregen/grav-plugin-archive-plus/blob/master/contributors "List of contributors to the project"
+[issues]: https://github.com/sommerregen/grav-plugin-archive-plus/issues "GitHub Issues for Grav Archive Plus plugin"
+[contributors]: https://github.com/sommerregen/grav-plugin-archive-plus/graphs/contributors "List of contributors of the project"
