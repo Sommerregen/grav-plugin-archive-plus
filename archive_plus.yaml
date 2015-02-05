@@ -5,6 +5,7 @@ show:
     counter: true             # Toggle to show number of items before the link
     year: true                # Toggle to show year
     month: true               # Toggle to show month
+    items: true               # Toggle to show items
 limit:
     year: 2                   # Limit to show only the last n years
     month: 12                 # Limit to show only the last n months
