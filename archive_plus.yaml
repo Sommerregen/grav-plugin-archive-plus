@@ -1,5 +1,10 @@
+# Global plugin configurations
+
 enabled: true                 # Set to false to disable this plugin completely
 built_in_css: true            # Use built-in CSS of the plugin
+
+# Default values for Archive Plus configuration.
+
 date_display_format: 'F Y'    # Date format to display e.g. January 2014
 show:
     counter: true             # Toggle to show number of items before the link
