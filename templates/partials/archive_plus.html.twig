@@ -53,7 +53,9 @@
         {# Toggle month + BEGIN: Wrap list #}
         {% if archive_plus.show.month %}
             <li>
-            <input type="checkbox" id="input-archive-{{ year_index }}-{{ loop.index }}" {{ checked }}/>
+            {% if archive_plus.show.items %}
+                <input type="checkbox" id="input-archive-{{ year_index }}-{{ loop.index }}" {{ checked }}/>
+            {% endif %}
             {% if archive_plus.show.counter %}
                 <label for="input-archive-{{ year_index }}-{{ loop.index }}" class="label counter">{{ items|length }}</label>
             {% else %}
@@ -67,17 +69,19 @@
             <ul class="last">
         {% endif %}
 
-        {% for item in items %}
-            {# Label active link #}
-            {% set active = '' %}
-            {% if archive_plus.current.page.id == item.id %}
-                {% set active = ' class="active"' %}
-            {% endif %}
+        {% if archive_plus.show.items %}
+            {% for item in items %}
+                {# Label active link #}
+                {% set active = '' %}
+                {% if archive_plus.current.page.id == item.id %}
+                    {% set active = ' class="active"' %}
+                {% endif %}
 
-            <li>
-                <a href="{{ base_url~item.route }}"{{ active }}>{{ item.title }}</a>
-            </li>
-        {% endfor %}
+                <li>
+                    <a href="{{ base_url~item.route }}"{{ active }}>{{ item.title }}</a>
+                </li>
+            {% endfor %}
+        {% endif %}
 
         {# END: Wrap list (month) #}
     {% if archive_plus.show.month %}
