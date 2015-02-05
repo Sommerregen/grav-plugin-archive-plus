@@ -1,3 +1,11 @@
+# v1.0.2
+## 02/05/2015
+
+1. [](#new)
+	* Added new option `limit.items` to hide items
+2. [](#improved)
+	* Updated documentation
+
 # v1.0.1
 ## 01/22/2015
 
@@ -7,18 +15,11 @@
 # v1.0.0
 ## 01/19/2015
 
-1. [](#improved)
-	* Improved readability of code
-
-2. [](#improved)
-	* Added more configuration options to Admin Panel
-
-3. [](#improved)
-	* Automatically add taxonomy type (`archive`) for months and years
-
-4. [](#new)
+1. [](#new)
 	* Added a blogger like hierarchical (year/month/post) archive menu
-
-5. [](#new)
 	* Fork of *Archives* plugin v1.2.0 by _Grav Team_ (see https://github.com/getgrav/grav-plugin-archives)
 	* ChangeLog started...
+2. [](#improved)
+	* Improved readability of code
+	* Added more configuration options to Admin Panel
+	* Automatically add taxonomy type (`archive`) for months and years
