@@ -11,21 +11,19 @@
  * @package     Archive Plus
  * @version     1.0.2
  * @link        <https://github.com/sommerregen/grav-plugin-archive-plus>
- * @author      Benjamin Regler <sommergen@benjamin-regler.de>
+ * @author      Benjamin Regler <sommerregen@benjamin-regler.de>
  * @copyright   2015, Benjamin Regler
  * @license     <http://opensource.org/licenses/MIT>            MIT
  */
 
 namespace Grav\Plugin;
 
-use Grav\Common\Plugin;
 use Grav\Common\Grav;
-use Grav\Common\Page\Collection;
-use Grav\Common\Page\Page;
-use Grav\Common\Debugger;
+use Grav\Common\Plugin;
 use Grav\Common\Taxonomy;
+use Grav\Common\Page\Page;
+use Grav\Common\Page\Collection;
 use RocketTheme\Toolbox\Event\Event;
-
 
 /**
  * Archive Plus Plugin
@@ -98,7 +96,6 @@ class ArchivePlusPlugin extends Plugin {
     public function onPageProcessed(Event $event) {
         // Get the page header
         $page = $event['page'];
-        $header = $page->header();
         $taxonomy = $page->taxonomy();
 
         if (!isset($taxonomy['archive'])) {
@@ -130,7 +127,6 @@ class ArchivePlusPlugin extends Plugin {
 
         // Initialize variables
         $id = $this->grav['page']->id();
-        $this->mergeConfig($this->grav['page']);
 
         $archives = array();
         $current = NULL;
@@ -207,39 +203,19 @@ class ArchivePlusPlugin extends Plugin {
             }
         }
 
-        // Get configurations of archive_plus plugin
+        // Get configurations of Archive Plus plugin
         $config = (array) $this->config->get('plugins.archive_plus');
 
         $config['data'] = $archives;
         $config['current'] = $current;
         $config['show_more'] = $show_more;
 
-        // Add the archives configurations to the twig variables
+        // Add Archive Plus configurations to the twig variables
         $this->grav['twig']->twig_vars['archive_plus'] = $config;
 
-        // Inject built in CSS if desired
-        if ( $this->config->get('plugins.breadcrumbs.built_in_css') ) {
-            $this->grav['assets']->add('plugin://archive_plus/css/archive_plus.css');
-        }
-    }
-
-    /** -------------------------------
-     * Private/protected helper methods
-     * --------------------------------
-     */
-
-    /**
-     * Merge global and page configurations.
-     *
-     * @param  Page   $page The page to merge the configurations with the
-     *                      plugin settings.
-     */
-    protected function mergeConfig(Page $page) {
-        $defaults = (array) $this->config->get('plugins.archive_plus');
-        if ( isset($page->header()->archive_plus) ) {
-            $this->config->set('plugins.archive_plus',
-                array_merge($defaults, $page->header()->archive_plus)
-            );
+        // Inject built-in CSS if desired
+        if ( $this->config->get('plugins.archive_plus.built_in_css') ) {
+            $this->grav['assets']->add('plugin://archive_plus/assets/css/archive_plus.css');
         }
     }
 }
