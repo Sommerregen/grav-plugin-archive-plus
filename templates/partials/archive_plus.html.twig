@@ -31,7 +31,7 @@
         <label for="input-archive-{{ year_index }}"></label>
             {% endif %}
 
-            <a href="{{ base_url }}/archive:{{ year|e('url') }}">
+            <a href="{{ base_url }}/archive{{ config.system.param_sep }}{{ year|e('url') }}">
         <span class="archive_year">{{ year }}</span>
         </a>
 
@@ -62,7 +62,7 @@
                 <label for="input-archive-{{ year_index }}-{{ loop.index }}"></label>
             {% endif %}
 
-            <a href="{{ base_url }}/archive:{{ month|date('M_Y')|lower|e('url') }}">
+            <a href="{{ base_url }}/archive{{ config.system.param_sep }}{{ month|date('M_Y')|lower|e('url') }}">
                 <span class="archive_month">{{ month }}</span>
             </a>
 
