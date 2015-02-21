@@ -1,5 +1,5 @@
 name: Archive Plus
-version: 1.0.2
+version: 1.1.0
 description: "The **Archive Plus** plugin is an enhanced version of the [Grav Archives plugin](https://github.com/getgrav/grav-plugin-archives) with more configuration options and the ability to show a blogger like hierarchical archive menu for links grouped by month and/or year."
 icon: university
 author:
@@ -7,7 +7,7 @@ author:
   email: sommerregen@benjamin-regler.de
 homepage: https://github.com/sommerregen/grav-plugin-archive-plus
 docs: https://github.com/sommerregen/grav-plugin-archive-plus/blob/master/README.md
-keywords: archive, plugin, blog, month, year, date, navigation, history
+keywords: [archive, plugin, blog, month, year, date, navigation, history]
 bugs: https://github.com/sommerregen/grav-plugin-archive-plus/issues
 license: MIT
 
