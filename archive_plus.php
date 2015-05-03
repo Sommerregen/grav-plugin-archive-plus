@@ -32,7 +32,8 @@ use RocketTheme\Toolbox\Event\Event;
  * configuration options and the ability to show a blogger-like
  * archive menu for links grouped by year and/or month.
  */
-class ArchivePlusPlugin extends Plugin {
+class ArchivePlusPlugin extends Plugin
+{
     /** -------------
      * Public methods
      * --------------
@@ -44,7 +45,8 @@ class ArchivePlusPlugin extends Plugin {
      * @return array    The list of events of the plugin of the form
      *                      'name' => ['method_name', priority].
      */
-    public static function getSubscribedEvents() {
+    public static function getSubscribedEvents()
+    {
         return [
             // Make sure the plugin is called before the Archives plugin
             'onPluginsInitialized' => ['onPluginsInitialized', 1]
@@ -54,20 +56,21 @@ class ArchivePlusPlugin extends Plugin {
     /**
      * Initialize configuration
      */
-    public function onPluginsInitialized() {
-        if ( $this->isAdmin() ) {
+    public function onPluginsInitialized()
+    {
+        if ($this->isAdmin()) {
             $this->active = false;
             return;
         }
 
         // Activate plugin only if 'enabled' option is set true
-        if ( !$this->config->get('plugins.archive_plus.enabled') ) {
+        if (!$this->config->get('plugins.archive_plus.enabled')) {
             return;
         }
 
         // Emulate Archives plugin; switch it off, if present
-        $this->config->set('plugins.archives.enabled', FALSE);
-        $this->config->set('plugins.archives.emulated', TRUE);
+        $this->config->set('plugins.archives.enabled', false);
+        $this->config->set('plugins.archives.emulated', true);
 
         // Dynamically add the needed taxonomy types to the taxonomies config
         $taxonomy_config = array_merge((array)
@@ -84,7 +87,8 @@ class ArchivePlusPlugin extends Plugin {
     /**
      * Add current directory to twig lookup paths.
      */
-    public function onTwigTemplatePaths() {
+    public function onTwigTemplatePaths()
+    {
         $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
     }
 
@@ -93,7 +97,8 @@ class ArchivePlusPlugin extends Plugin {
      *
      * @param Event $event
      */
-    public function onPageProcessed(Event $event) {
+    public function onPageProcessed(Event $event)
+    {
         // Get the page header
         $page = $event['page'];
         $taxonomy = $page->taxonomy();
@@ -116,7 +121,7 @@ class ArchivePlusPlugin extends Plugin {
      */
     public function onTwigSiteVariables() {
         // Emulate Archives plugin; temporarily enable it to for rendering
-        $this->config->set('plugins.archives.enabled', TRUE);
+        $this->config->set('plugins.archives.enabled', true);
 
         /** @var Taxonomy $taxonomy_map */
         $taxonomy_map = $this->grav['taxonomy'];
@@ -128,14 +133,14 @@ class ArchivePlusPlugin extends Plugin {
         // Initialize variables
         $id = $this->grav['page']->id();
 
-        $archives = array();
-        $current = NULL;
+        $archives = [];
+        $current = null;
 
         // Get plugin filters settings
         $filters = (array) $this->config->get('plugins.archive_plus.filters');
         $operator = $this->config->get('plugins.archive_plus.filter_combinator');
 
-        if ( count($filters) > 0)  {
+        if (count($filters) > 0) {
             $collection = new Collection();
             $collection->append(
                 $taxonomy_map->findTaxonomy($filters, $operator)->toArray()
@@ -156,7 +161,7 @@ class ArchivePlusPlugin extends Plugin {
                 $archives[date('Y', $page->date())][date($date_format, $page->date())][] = $page;
 
                 // Store current page, if found in archive list
-                if ( $page->id() == $id ) {
+                if ($page->id() == $id) {
                     $current = array(
                         'page' => $page,
                         'month' => date($date_format, $page->date()),
@@ -168,37 +173,37 @@ class ArchivePlusPlugin extends Plugin {
 
         // Limit output of archive block depending on number of items,
         // number of months or years to display
-        $show_more = FALSE;
+        $show_more = false;
         $user_limits = (array) $this->config->get('plugins.archive_plus.limit');
         $limits = array_fill_keys(array('items', 'month', 'year'), 0);
 
         // Slice the array to the limit you want
-        foreach ( $archives as $year => $months ) {
-            foreach ( $months as $month => $pages ) {
-                if ( $user_limits['items'] > 0 ) {
-                    if ( $limits['items'] < $user_limits['items'] ) {
+        foreach ($archives as $year => $months) {
+            foreach ($months as $month => $pages) {
+                if ($user_limits['items'] > 0) {
+                    if ($limits['items'] < $user_limits['items']) {
                         $limits['items'] += count($pages);
                     } else {
                         unset($archives[$year][$month]);
-                        $show_more = TRUE;
+                        $show_more = true;
                     }
                 }
 
-                if ( $user_limits['month'] > 0 ) {
-                    if ( $limits['month'] < $user_limits['month'] ) {
+                if ($user_limits['month'] > 0) {
+                    if ($limits['month'] < $user_limits['month']) {
                         $limits['month'] += 1;
                     } else {
                         unset($archives[$year][$month]);
-                        $show_more = TRUE;
+                        $show_more = true;
                     }
                 }
             }
-            if ( $user_limits['year'] > 0 ) {
-                if ( $limits['year'] < $user_limits['year'] ) {
+            if ($user_limits['year'] > 0) {
+                if ($limits['year'] < $user_limits['year']) {
                     $limits['year'] += 1;
                 } else {
                     unset($archives[$year]);
-                    $show_more = TRUE;
+                    $show_more = true;
                 }
             }
         }
@@ -214,8 +219,9 @@ class ArchivePlusPlugin extends Plugin {
         $this->grav['twig']->twig_vars['archive_plus'] = $config;
 
         // Inject built-in CSS if desired
-        if ( $this->config->get('plugins.archive_plus.built_in_css') ) {
-            $this->grav['assets']->add('plugin://archive_plus/assets/css/archive_plus.css');
+        if ($this->config->get('plugins.archive_plus.built_in_css')) {
+            $this->grav['assets']
+                ->add('plugin://archive_plus/assets/css/archive_plus.css');
         }
     }
 }
