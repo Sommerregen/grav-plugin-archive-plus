@@ -4,7 +4,7 @@
 
 ## About
 
-`Archive Plus` shares many features with the [`Grav Archives plugin`](https://github.com/getgrav/grav-plugin-archives) e.g. it automatically appends a `year` and `month_year` taxonomy to all pages and provides a `partials\archive_plus.html.twig` template which you can include in a blog sidebar to render links into a year/month/post format useful for blogs, but enhances them in an intuitive way.
+`Archive Plus` shares many features with the [`Grav Archives plugin`](https://github.com/getgrav/grav-plugin-archives), e.g. it automatically appends a `year` and `month_year` taxonomy to all pages and provides a `partials\archive_plus.html.twig` template, which you can include in a blog sidebar to render links into a year/month/post format useful for blogs, but enhances them in an intuitive way.
 
 Currently it
 
@@ -13,7 +13,7 @@ Currently it
 
 See how the `Archive Plus` will look like on your site:
 
-![Screenshot Archive Plus](assets/screenshot_1.png "Screenshot")
+![Screenshot Archive Plus](assets/screenshot_1.png "Archive Plus Preview")
 
 Some more screenshots of the functionality can be found in the [assets folder](assets/).
 
@@ -71,7 +71,7 @@ Copy the template file [templates/partials/archive_plus.html.twig](templates/par
 
 You can now edit the override and tweak it however you prefer.
 
->> Note: Don't touch or edit the template file [templates/partials/archives.html.twig](templates/partials/archives.html.twig) in the `templates/partials` folder! This file serves as a compatibility fallback for those themes which expect the Archives plugin to be installed.
+> **Note:** Don't touch or edit the template file [templates/partials/archives.html.twig](templates/partials/archives.html.twig) in the `templates/partials` folder! This file serves as a compatibility fallback for those themes which expect the Archives plugin to be installed.
 
 ## Contributing
 
@@ -91,7 +91,7 @@ Thanks!
 
 ## License
 
-Copyright (c) 2015 [Benjamin Regler][github]. See also the list of [contributors] who participated in this project. A lot of credits also go to [Andy Miller](https://github.com/getgrav/) who wrote the Archives plugin, which this project is based on.
+Copyright (c) 2015 [Benjamin Regler][github]. See also the list of [contributors] who participated in this project. A lot of credits also goes to [Andy Miller](https://github.com/getgrav/) who wrote the Archives plugin this project is based on.
 
 [Licensed](LICENSE) for use under the terms of the [MIT license][mit-license].
 
