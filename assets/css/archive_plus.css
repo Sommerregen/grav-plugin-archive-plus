@@ -40,6 +40,14 @@
   margin-right: 1rem;
   vertical-align: middle;
 }
+.archive-plus label:before {
+  content: "";
+  bottom: 0;
+  left: 100%;
+  top: 0;
+  width: 1rem;
+  position: absolute;
+}
 .archive-plus label:after {
   color: #1bb3e9;
   font-size: small;
