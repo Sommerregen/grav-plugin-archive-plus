@@ -1,3 +1,10 @@
+# v1.1.1
+## 05/10/2015
+
+2. [](#improved)
+	* Better expandable blogger-like hierarchical menu
+	* PSR fixes
+
 # v1.1.0
 ## 02/21/2015
 
