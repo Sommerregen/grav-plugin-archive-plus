@@ -2,7 +2,7 @@
 cz:
   PLUGIN_ARCHIVE_PLUS:
     NAME: "archiv"
-    SHOW_MORE: "&raquo;"
+    SHOW_MORE: "Zobrazit více &raquo;"
     MONTHS: ["Leden", "Únor", "Brĕzen", "Duben", "Kvĕten", "Červen", "Červenec", "Srpen", "Září", "Říjen", "Listopad", "Prosinec"]
     SHORT_MONTHS: ["led", "Ún", "Brĕz", "Dub", "Kvĕt", "Červ", "Červen", "Srp", "Září", "Říj", "List", "Pros"]
 
