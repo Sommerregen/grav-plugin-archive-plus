@@ -4,6 +4,7 @@
   margin-top: 0;
 }
 .archive-plus {
+  margin-bottom: 1em;
   margin-bottom: 1rem;
 }
 .archive-plus .active {
@@ -11,15 +12,19 @@
 }
 .archive-plus li {
   border-bottom: 0;
+  line-height: 2em;
   line-height: 2rem;
 }
 .archive-plus ul {
+  margin-left: 1em;
   margin-left: 1rem;
 }
 .archive-plus .label ~ ul.last {
+  margin-left: 2em;
   margin-left: 2rem;
 }
 .archive-plus ul label.arrows ~ ul {
+  margin-left: 1.25em;
   margin-left: 1.25rem;
 }
 .archive-plus input, .archive-plus li ul {
@@ -32,34 +37,32 @@
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
-}
-.archive-plus label {
+
   display: inline-block;
+  height: 1em;
   height: 1rem;
   line-height: 1rem;
+  margin-right: 1em;
   margin-right: 1rem;
   vertical-align: middle;
-}
-.archive-plus label:before {
-  content: "";
-  bottom: 0;
-  left: 100%;
-  top: 0;
-  width: 1rem;
-  position: absolute;
 }
 .archive-plus label:after {
   color: #1bb3e9;
   font-size: small;
   left: 100%;
   position: absolute;
+  margin-left: .1em;
+  margin-left: .1rem;
 }
-.archive-plus input ~ .label:hover:after,
+.archive-plus label:hover:after {
+  color: #0e6e90;
+}
+.archive-plus li:hover > input ~ .label:after,
 .archive-plus label:after {
   content: "\25B6";
 }
-.archive-plus input:checked ~ .label:hover:after,
-.archive-plus input:checked ~ label:after {
+.archive-plus li:hover > input:checked ~ .label:after,
+.archive-plus li > input:checked ~ label:after {
   content: "\25BC";
 }
 .archive-plus label.counter:after {
@@ -72,5 +75,6 @@
 .archive-plus ul.last a:before {
   content: "\25B6";
   font-size: small;
-  margin-right: .25rem;
+  margin-right: .35em;
+  margin-right: .35rem;
 }

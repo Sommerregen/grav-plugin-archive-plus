@@ -36,21 +36,6 @@ form:
       validate:
         type: bool
 
-    date_display_format:
-      type: select
-      size: medium
-      classes: fancy
-      label: Date Format
-      default: 'F Y'
-      options:
-        'F' : "January"
-        'F Y' : "January 2014"
-        'F jS Y': "January 1st 2014"
-        'l jS of F': "Monday 1st of January"
-        'D, m M Y': "Mon, 01 Jan 2014"
-        'd-m-y': "01-01-14"
-        'jS M Y': "10th Feb 2014"
-
     show.counter:
       type: toggle
       label: Show Count
