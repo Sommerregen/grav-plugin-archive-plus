@@ -1,5 +1,5 @@
 name: Archive Plus
-version: 1.1.1
+version: 1.2.0
 description: "The **Archive Plus** plugin is an enhanced version of the [Grav Archives plugin](https://github.com/getgrav/grav-plugin-archives) with more configuration options and the ability to show a blogger like hierarchical archive menu for links grouped by month and/or year."
 icon: university
 author:
@@ -35,21 +35,6 @@ form:
         0: Disabled
       validate:
         type: bool
-
-    date_display_format:
-      type: select
-      size: medium
-      classes: fancy
-      label: Date Format
-      default: 'F Y'
-      options:
-        'F' : "January"
-        'F Y' : "January 2014"
-        'F jS Y': "January 1st 2014"
-        'l jS of F': "Monday 1st of January"
-        'D, m M Y': "Mon, 01 Jan 2014"
-        'd-m-y': "01-01-14"
-        'jS M Y': "10th Feb 2014"
 
     show.counter:
       type: toggle
