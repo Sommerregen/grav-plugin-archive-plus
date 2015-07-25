@@ -19,7 +19,7 @@
 Currently it
 
  - [x] adds a blogger like hierarchical (year/month/post) archive menu
- - [x] has multi-language support **(requires Grav 0.9.33
+ - [x] has multi-language support **(requires Grav 0.9.33)**
  - [ ] provides a custom archive page (under development)
  - [x] and a per site configuration
 

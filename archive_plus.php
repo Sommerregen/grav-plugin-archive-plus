@@ -1,6 +1,6 @@
 <?php
 /**
- * Archive Plus v1.1.1
+ * Archive Plus v1.2.0
  *
  * An enhanced version of the Grav Archives plugin with more
  * configuration options and the ability to show a blogger-like
@@ -10,7 +10,7 @@
  * http://benjamin-regler.de/license/
  *
  * @package     Archive Plus
- * @version     1.1.1
+ * @version     1.2.0
  * @link        <https://github.com/sommerregen/grav-plugin-archive-plus>
  * @author      Benjamin Regler <sommerregen@benjamin-regler.de>
  * @copyright   2015, Benjamin Regler
