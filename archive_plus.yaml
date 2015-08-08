@@ -3,23 +3,23 @@
 enabled: true                 # Set to false to disable this plugin completely
 built_in_css: true            # Use built-in CSS of the plugin
 
-# Default values for Archive Plus configuration.
+# Default values for Archive Plus configuration
 
 show:
-    counter: true             # Toggle to show number of items before the link
-    year: true                # Toggle to show year
-    month: true               # Toggle to show month
-    items: true               # Toggle to show items
+  counter: true               # Toggle to show number of items before the link
+  year: true                  # Toggle to show year
+  month: true                 # Toggle to show month
+  items: true                 # Toggle to show items
 
 limit:
-    year: 2                   # Limit to show only the last n years
-    month: 12                 # Limit to show only the last n months
-    items: 40                 # Limit to show only the last n items
+  year: 2                     # Limit to show only the last n years
+  month: 12                   # Limit to show only the last n months
+  items: 40                   # Limit to show only the last n items
 
 order:
-    by: date                  # Ordering of items
-    dir: desc                 # Ordering of items (asc or desc)
+  by: date                    # Ordering of items
+  dir: desc                   # Ordering of items (asc or desc)
 
 filter_combinator: and        # The filter combinator to use to combine several filters
 filters:                      # Filter to select which items should be shown
-    category: blog
+  category: blog
