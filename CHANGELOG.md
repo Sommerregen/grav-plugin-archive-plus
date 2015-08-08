@@ -1,12 +1,22 @@
+# v1.3.0
+## 08/08/2015
+
+1. [](#new)
+	* Added admin configurations **(requires Grav 0.9.34+)**
+2. [](#improved)
+	* Updated `README.md`
+3. [](#bugfix)
+	* Fixed Czech translation
+
 # v1.2.0
 ## 07/25/2015
 
 1. [](#new)
-	* Added multi-language support **(requires Grav 0.9.33)**
+	* Added multi-language support **(requires Grav 0.9.33+)**
 	* Added `Show more` button below blogger-like hierarchical menu, when list of items is truncated
 2. [](#improved)
 	* Refactored code
-	* Updated README.md
+	* Updated `README.md`
 	* Improved speed (plugin now caches the results)
 	* Slight style changes in the blogger-like hierarchical menu
 3. [](#bugfix)

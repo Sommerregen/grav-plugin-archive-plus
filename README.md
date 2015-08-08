@@ -19,7 +19,7 @@
 Currently it
 
  - [x] adds a blogger like hierarchical (year/month/post) archive menu
- - [x] has multi-language support **(requires Grav 0.9.33)**
+ - [x] has multi-language support **(requires Grav 0.9.33
  - [ ] provides a custom archive page (under development)
  - [x] and a per site configuration
 
@@ -29,9 +29,9 @@ See how the `Archive Plus` will look like on your site:
 
 ## Installation and Updates
 
-Installing or updating the `Archive Plus` plugin can be done in one of two ways. Using the GPM (Grav Package Manager) installation update method or manual install by downloading [this plugin](https://github.com/sommerregen/grav-plugin-shortcodes) and extracting all plugin files to
+Installing or updating the `Archive Plus` plugin can be done in one of two ways. Using the GPM (Grav Package Manager) installation update method (i.e. `bin/gpm install archive_plus`) or manual install by downloading [this plugin](https://github.com/sommerregen/grav-plugin-archive-plus) and extracting all plugin files to
 
-    /your/site/grav/user/plugins/archive_plus
+    user/plugins/archive_plus
 
 For more informations, please check the [Installation and update guide](docs/INSTALL.md).
 
@@ -50,23 +50,23 @@ built_in_css: true            # Use built-in CSS of the plugin
 # Default values for Archive Plus configuration.
 
 show:
-    counter: true             # Toggle to show number of items before the link
-    year: true                # Toggle to show year
-    month: true               # Toggle to show month
-    items: true               # Toggle to show items
+  counter: true               # Toggle to show number of items before the link
+  year: true                  # Toggle to show year
+  month: true                 # Toggle to show month
+  items: true                 # Toggle to show items
 
 limit:
-    year: 2                   # Limit to show only the last n years
-    month: 12                 # Limit to show only the last n months
-    items: 40                 # Limit to show only the last n items
+  year: 2                     # Limit to show only the last n years
+  month: 12                   # Limit to show only the last n months
+  items: 40                   # Limit to show only the last n items
 
 order:
-    by: date                  # Ordering of items
-    dir: desc                 # Ordering of items (asc or desc)
+  by: date                    # Ordering of items
+  dir: desc                   # Ordering of items (asc or desc)
 
 filter_combinator: and        # The filter combinator to use to combine several filters
 filters:                      # Filter to select which items should be shown
-    category: blog
+  category: blog
 ```
 
 If you need to change any value, then the best process is to copy the [archive_plus.yaml](archive_plus.yaml) file into your `users/config/plugins/` folder (create it if it doesn't exist), and then modify there. This will override the default settings.
@@ -77,9 +77,7 @@ Something you might want to do is to override the look and feel of the archives,
 
 Copy the template file [templates/partials/archive_plus.html.twig](templates/partials/archive_plus.html.twig) into the `templates/partials` folder of your custom theme, and that is it.
 
-```
-user/themes/custom-theme/templates/partials/archive_plus.html.twig
-```
+    user/themes/custom-theme/templates/partials/archive_plus.html.twig
 
 You can now edit the override and tweak it however you prefer.
 
@@ -114,7 +112,7 @@ Copyright (c) 2015 [Benjamin Regler][github]. See also the list of [contributors
 [gpl-license]: http://opensource.org/licenses/GPL-3.0 "GPLv3 license"
 [mit-license]: http://www.opensource.org/licenses/mit-license.php "MIT license"
 
-[flattr]: https://flattr.com/submit/auto?user_id=Sommerregen&url=https://github.com/sommerregen/grav-plugin-shortcodes "Flatter my GitHub project"
+[flattr]: https://flattr.com/submit/auto?user_id=Sommerregen&url=https://github.com/sommerregen/grav-plugin-archive-plus "Flatter my GitHub project"
 [paypal]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SYFNP82USG3RN "Donate for my GitHub project using PayPal"
 [bitcoin]: bitcoin:1HQdy5aBzNKNvqspiLvcmzigCq7doGfLM4?label=GitHub%20project "Donate for my GitHub project using BitCoin"
 [gnu]: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/License_icon-gpl-88x31.svg/88px-License_icon-gpl-88x31.svg.png "GNU license - Some rights reserved"

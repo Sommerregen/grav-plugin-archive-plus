@@ -1,106 +1,119 @@
 # Czech
 cz:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "archiv"
-    SHOW_MORE: "&raquo;"
-    MONTHS: ["Leden", "Únor", "Brĕzen", "Duben", "Kvĕten", "Červen", "Červenec", "Srpen", "Září", "Říjen", "Listopad", "Prosinec"]
-    SHORT_MONTHS: ["led", "Ún", "Brĕz", "Dub", "Kvĕt", "Červ", "Červen", "Srp", "Září", "Říj", "List", "Pros"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "archiv"
+      SHOW_MORE: "Zobrazit více &raquo;"
+      MONTHS: ["Leden", "Únor", "Brĕzen", "Duben", "Kvĕten", "Červen", "Červenec", "Srpen", "Září", "Říjen", "Listopad", "Prosinec"]
+      SHORT_MONTHS: ["led", "Ún", "Brĕz", "Dub", "Kvĕt", "Červ", "Červen", "Srp", "Září", "Říj", "List", "Pros"]
 
 # German
 de:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "archiv"
-    SHOW_MORE: "Mehr anzeigen &raquo;"
-    MONTHS: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-    SHORT_MONTHS: ["Jan", "Febr", "März", "Apr", "Mai", "Juni", "Juli", "Aug", "Sept", "Okt", "Nov", "Dez"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "archiv"
+      SHOW_MORE: "Mehr anzeigen &raquo;"
+      MONTHS: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+      SHORT_MONTHS: ["Jan", "Febr", "März", "Apr", "Mai", "Juni", "Juli", "Aug", "Sept", "Okt", "Nov", "Dez"]
 
 # Greek
 el:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "αρχεία"
-    SHOW_MORE: "Εμφάνιση περισσότερων &raquo;"
-    MONTHS_OF_THE_YEAR: ["Ιανουάριος", "Φεβρουάριος", "Μάρτιος", "Απρίλιος", "Μάιος", "Ιούνιος", "Ιούλιος", "Αύγουστος", "Σεπτέμβριος", "Οκτώβριος", "Νοέμβριος", "Δεκέμβριος"]
-    SHORT_MONTHS: ["Iαν","Φεβ","Μαρ","Απρ","Μαι","Ιουν","Ιουλ","Αυγ","Σεπ","Οκτ","Νοε","Δεκ"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "αρχεία"
+      SHOW_MORE: "Εμφάνιση περισσότερων &raquo;"
+      MONTHS_OF_THE_YEAR: ["Ιανουάριος", "Φεβρουάριος", "Μάρτιος", "Απρίλιος", "Μάιος", "Ιούνιος", "Ιούλιος", "Αύγουστος", "Σεπτέμβριος", "Οκτώβριος", "Νοέμβριος", "Δεκέμβριος"]
+      SHORT_MONTHS: ["Iαν","Φεβ","Μαρ","Απρ","Μαι","Ιουν","Ιουλ","Αυγ","Σεπ","Οκτ","Νοε","Δεκ"]
 
 # English
 en:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "archive"
-    SHOW_MORE: "Show more &raquo;"
-    MONTHS: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    SHORT_MONTHS: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "archive"
+      SHOW_MORE: "Show more &raquo;"
+      MONTHS: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+      SHORT_MONTHS: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 # Spanish
 es:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "archivo"
-    SHOW_MORE: "Mostrar más &raquo;"
-    MONTHS_OF_THE_YEAR: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
-    SHORT_MONTHS: ["Enero", "Feb", "Marzo", "Abr", "Mayo", "Jun", "Jul", "Agosto", "Sept", "Oct", "Nov", "Dic"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "archivo"
+      SHOW_MORE: "Mostrar más &raquo;"
+      MONTHS_OF_THE_YEAR: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+      SHORT_MONTHS: ["Enero", "Feb", "Marzo", "Abr", "Mayo", "Jun", "Jul", "Agosto", "Sept", "Oct", "Nov", "Dic"]
 
 
 # French
 fr:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "archives"
-    SHOW_MORE: "Afficher plus &raquo;"
-    MONTHS_OF_THE_YEAR: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
-    SHORT_MONTHS: ["Janv", "Févr", "Mars", "Avril", "Mai", "Juin", "Juil", "Août", "Sept", "Oct", "Nov", "Déc"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "archives"
+      SHOW_MORE: "Afficher plus &raquo;"
+      MONTHS_OF_THE_YEAR: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
+      SHORT_MONTHS: ["Janv", "Févr", "Mars", "Avril", "Mai", "Juin", "Juil", "Août", "Sept", "Oct", "Nov", "Déc"]
 
 # Italian
 it:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "archivio"
-    SHOW_MORE: "Mostra più &raquo;"
-    MONTHS_OF_THE_YEAR: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"]
-    SHORT_MONTHS: ["Genn", "Febbr", "Mar", "Apr", "Magg", "Giugno", "Luglio", "Ag", "Sett", "Ott", "Nov", "Dic"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "archivio"
+      SHOW_MORE: "Mostra più &raquo;"
+      MONTHS_OF_THE_YEAR: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"]
+      SHORT_MONTHS: ["Genn", "Febbr", "Mar", "Apr", "Magg", "Giugno", "Luglio", "Ag", "Sett", "Ott", "Nov", "Dic"]
 
 # Dutch
 nl:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "archief"
-    SHOW_MORE: "Meer bekijk &raquo;"
-    MONTHS_OF_THE_YEAR: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"]
-    SHORT_MONTHS: ["Jan", "Feb", "Maart", "Apr", "Mei", "Juni", "Juli", "Aug", "Sept", "Okt", "Nov", "Dec"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "archief"
+      SHOW_MORE: "Meer bekijk &raquo;"
+      MONTHS_OF_THE_YEAR: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"]
+      SHORT_MONTHS: ["Jan", "Feb", "Maart", "Apr", "Mei", "Juni", "Juli", "Aug", "Sept", "Okt", "Nov", "Dec"]
 
 
 # Polish
 pl:
-  PLUGIN_ARCHIVE_PLUS:
-  NAME: "archiwa"
-  SHOW_MORE: "Pokaż więcej &raquo;"
-  MONTHS_OF_THE_YEAR: ["Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień"]
-  SHORT_MONTHS: ["Stycz", "Luty", "Mar", "Kwiec", "Maj", "Czerw", "Lip", "Sierp", "Wrzes", "Paźdz", "Listop", "Grudz"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "archiwa"
+      SHOW_MORE: "Pokaż więcej &raquo;"
+      MONTHS_OF_THE_YEAR: ["Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień"]
+      SHORT_MONTHS: ["Stycz", "Luty", "Mar", "Kwiec", "Maj", "Czerw", "Lip", "Sierp", "Wrzes", "Paźdz", "Listop", "Grudz"]
 
 
 # Portuguese
 pt:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "arquivo"
-    SHOW_MORE: "Mostrar mais &raquo;"
-    MONTHS_OF_THE_YEAR: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agôsto", "Setembro", "Outubro", "Novembro", "Dezembro"]
-    SHORT_MONTHS: ["Jan", "Fev", "Março", "Abril", "Maio", "Junho", "Julho", "Agôsto", "Set", "Out", "Nov", "Dez"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "arquivo"
+      SHOW_MORE: "Mostrar mais &raquo;"
+      MONTHS_OF_THE_YEAR: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agôsto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+      SHORT_MONTHS: ["Jan", "Fev", "Março", "Abril", "Maio", "Junho", "Julho", "Agôsto", "Set", "Out", "Nov", "Dez"]
 
 # Romanian
 ro:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "arhive"
-    SHOW_MORE: "Afiseare tot &raquo;"
-    MONTHS_OF_THE_YEAR: ["Ianuarie", "Februarie", "Martie", "Aprilue", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"]
-    SHORT_MONTHS: ["Ian", "Feb", "Mar", "Apr", "Mai", "Iunie", "Iulie", "Aug", "Sept", "Oct", "Noem", "Dec"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "arhive"
+      SHOW_MORE: "Afiseare tot &raquo;"
+      MONTHS_OF_THE_YEAR: ["Ianuarie", "Februarie", "Martie", "Aprilue", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"]
+      SHORT_MONTHS: ["Ian", "Feb", "Mar", "Apr", "Mai", "Iunie", "Iulie", "Aug", "Sept", "Oct", "Noem", "Dec"]
 
 # Russian
 ru:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "архив"
-    SHOW_MORE: "Показать еще &raquo;"
-    MONTHS_OF_THE_YEAR: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
-    SHORT_MONTHS: ["Ianv", "Fev", "Mart", "Apr", "Mai", "Iiun", "Iiul", "Avg", "Sent", "Okt", "Noiabr", "Dek"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "архив"
+      SHOW_MORE: "Показать еще &raquo;"
+      MONTHS_OF_THE_YEAR: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
+      SHORT_MONTHS: ["Ianv", "Fev", "Mart", "Apr", "Mai", "Iiun", "Iiul", "Avg", "Sent", "Okt", "Noiabr", "Dek"]
 
 # Ukrainian
 ua:
-  PLUGIN_ARCHIVE_PLUS:
-    NAME: "архів"
-    SHOW_MORE: "Показати більше &raquo;"
-    MONTHS: ["січень", "лютий", "березень", "квітень", "травень", "червень", "липень", "серпень", "вересень", "жовтень", "листопад", "грудень"]
-    SHORT_MONTHS: ["Sich", "Liut", "Ber", "Kvit", "Trav", "Cher", "Lyp", "Serp", "Ver", "Zhovt", "Lyst", "Hrud"]
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "архів"
+      SHOW_MORE: "Показати більше &raquo;"
+      MONTHS: ["січень", "лютий", "березень", "квітень", "травень", "червень", "липень", "серпень", "вересень", "жовтень", "листопад", "грудень"]
+      SHORT_MONTHS: ["Sich", "Liut", "Ber", "Kvit", "Trav", "Cher", "Lyp", "Serp", "Ver", "Zhovt", "Lyst", "Hrud"]
