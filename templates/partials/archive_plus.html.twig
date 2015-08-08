@@ -31,7 +31,7 @@
             <label for="input-archive-{{ year_index }}"></label>
         {% endif %}
 
-        <a href="{{ base_url }}/{{ 'PLUGIN_ARCHIVE_PLUS.NAME'|t }}{{ config.system.param_sep }}{{ year|e('url') }}">
+        <a href="{{ base_url }}/{{ 'PLUGINS.ARCHIVE_PLUS.NAME'|t }}{{ config.system.param_sep }}{{ year|e('url') }}">
             <span class="archive_year">{{ year }}</span>
         </a>
 
@@ -63,9 +63,9 @@
         {% endif %}
 
         {% set month_time = mktime(0, 0, 0, month+1, 0, year) %}
-        {% set short_month = 'PLUGIN_ARCHIVE_PLUS.SHORT_MONTHS'|ta(month-1) %}
-        <a href="{{ base_url }}/{{ 'PLUGIN_ARCHIVE_PLUS.NAME'|t }}{{ config.system.param_sep }}{{ (short_month ~ '_' ~ year)|lower|e('url') }}">
-            <span class="archive_month">{{ 'PLUGIN_ARCHIVE_PLUS.MONTHS'|ta(month-1) }} {{ year }}</span>
+        {% set short_month = 'PLUGINS.ARCHIVE_PLUS.SHORT_MONTHS'|ta(month-1) %}
+        <a href="{{ base_url }}/{{ 'PLUGINS.ARCHIVE_PLUS.NAME'|t }}{{ config.system.param_sep }}{{ (short_month ~ '_' ~ year)|lower|e('url') }}">
+            <span class="archive_month">{{ 'PLUGINS.ARCHIVE_PLUS.MONTHS'|ta(month-1) }} {{ year }}</span>
         </a>
 
         <ul class="last">
@@ -100,5 +100,5 @@
 </ul>
 
 {% if archive_plus.show_more %}
-    <a class="button" href="{{ base_url }}/{{ 'PLUGIN_ARCHIVE_PLUS.NAME'|t }}{{ config.system.param_sep }}">{{ 'PLUGIN_ARCHIVE_PLUS.SHOW_MORE'|t }}</a>
+    <a class="button" href="{{ base_url }}/{{ 'PLUGINS.ARCHIVE_PLUS.NAME'|t }}{{ config.system.param_sep }}">{{ 'PLUGINS.ARCHIVE_PLUS.SHOW_MORE'|t }}</a>
 {% endif %}
