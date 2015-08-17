@@ -1,6 +1,6 @@
 <?php
 /**
- * Archive Plus v1.3.0
+ * Archive Plus v1.3.1
  *
  * An enhanced version of the Grav Archives plugin with more
  * configuration options and the ability to show a blogger-like
@@ -10,7 +10,7 @@
  * http://benjamin-regler.de/license/
  *
  * @package     Archive Plus
- * @version     1.3.0
+ * @version     1.3.1
  * @link        <https://github.com/sommerregen/grav-plugin-archive-plus>
  * @author      Benjamin Regler <sommerregen@benjamin-regler.de>
  * @copyright   2015, Benjamin Regler
@@ -107,7 +107,7 @@ class ArchivePlusPlugin extends Plugin
 
         // Extract language from page extension
         $active = preg_match('~(\w+)\.\w+$~i', $page->extension(), $match) ? $match[1] : '';
-        $key = $language->translate(['PLUGIN_ARCHIVE_PLUS.NAME'], ['en']);
+        $key = $language->translate(['PLUGINS.ARCHIVE_PLUS.NAME'], ['en']);
 
         if (!isset($taxonomy[$key])) {
             $index = date('n', $page->date()) - 1;
@@ -115,8 +115,8 @@ class ArchivePlusPlugin extends Plugin
             $languages = $active ? [$active]: $language->getLanguages();
 
             foreach ($languages as $lang) {
-                $key = $language->translate(['PLUGIN_ARCHIVE_PLUS.NAME'], [$lang]);
-                $month = strtolower($language->translateArray('PLUGIN_ARCHIVE_PLUS.SHORT_MONTHS', $index, [$lang]));
+                $key = $language->translate(['PLUGINS.ARCHIVE_PLUS.NAME'], [$lang]);
+                $month = strtolower($language->translateArray('PLUGINS.ARCHIVE_PLUS.SHORT_MONTHS', $index, [$lang]));
 
                 // Track month taxonomy in "jan_2015" and year in "2015" format
                 $taxonomy[$key] = ["{$month}_{$year}", $year];
