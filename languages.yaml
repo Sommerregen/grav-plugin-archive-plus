@@ -22,7 +22,7 @@ el:
     ARCHIVE_PLUS:
       NAME: "αρχεία"
       SHOW_MORE: "Εμφάνιση περισσότερων &raquo;"
-      MONTHS_OF_THE_YEAR: ["Ιανουάριος", "Φεβρουάριος", "Μάρτιος", "Απρίλιος", "Μάιος", "Ιούνιος", "Ιούλιος", "Αύγουστος", "Σεπτέμβριος", "Οκτώβριος", "Νοέμβριος", "Δεκέμβριος"]
+      MONTHS: ["Ιανουάριος", "Φεβρουάριος", "Μάρτιος", "Απρίλιος", "Μάιος", "Ιούνιος", "Ιούλιος", "Αύγουστος", "Σεπτέμβριος", "Οκτώβριος", "Νοέμβριος", "Δεκέμβριος"]
       SHORT_MONTHS: ["Iαν","Φεβ","Μαρ","Απρ","Μαι","Ιουν","Ιουλ","Αυγ","Σεπ","Οκτ","Νοε","Δεκ"]
 
 # English
@@ -40,7 +40,7 @@ es:
     ARCHIVE_PLUS:
       NAME: "archivo"
       SHOW_MORE: "Mostrar más &raquo;"
-      MONTHS_OF_THE_YEAR: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+      MONTHS: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
       SHORT_MONTHS: ["Enero", "Feb", "Marzo", "Abr", "Mayo", "Jun", "Jul", "Agosto", "Sept", "Oct", "Nov", "Dic"]
 
 
@@ -50,7 +50,7 @@ fr:
     ARCHIVE_PLUS:
       NAME: "archives"
       SHOW_MORE: "Afficher plus &raquo;"
-      MONTHS_OF_THE_YEAR: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
+      MONTHS: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
       SHORT_MONTHS: ["Janv", "Févr", "Mars", "Avril", "Mai", "Juin", "Juil", "Août", "Sept", "Oct", "Nov", "Déc"]
 
 # Italian
@@ -59,7 +59,7 @@ it:
     ARCHIVE_PLUS:
       NAME: "archivio"
       SHOW_MORE: "Mostra più &raquo;"
-      MONTHS_OF_THE_YEAR: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"]
+      MONTHS: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"]
       SHORT_MONTHS: ["Genn", "Febbr", "Mar", "Apr", "Magg", "Giugno", "Luglio", "Ag", "Sett", "Ott", "Nov", "Dic"]
 
 # Dutch
@@ -68,7 +68,7 @@ nl:
     ARCHIVE_PLUS:
       NAME: "archief"
       SHOW_MORE: "Meer bekijk &raquo;"
-      MONTHS_OF_THE_YEAR: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"]
+      MONTHS: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"]
       SHORT_MONTHS: ["Jan", "Feb", "Maart", "Apr", "Mei", "Juni", "Juli", "Aug", "Sept", "Okt", "Nov", "Dec"]
 
 
@@ -78,7 +78,7 @@ pl:
     ARCHIVE_PLUS:
       NAME: "archiwa"
       SHOW_MORE: "Pokaż więcej &raquo;"
-      MONTHS_OF_THE_YEAR: ["Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień"]
+      MONTHS: ["Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień"]
       SHORT_MONTHS: ["Stycz", "Luty", "Mar", "Kwiec", "Maj", "Czerw", "Lip", "Sierp", "Wrzes", "Paźdz", "Listop", "Grudz"]
 
 
@@ -88,7 +88,7 @@ pt:
     ARCHIVE_PLUS:
       NAME: "arquivo"
       SHOW_MORE: "Mostrar mais &raquo;"
-      MONTHS_OF_THE_YEAR: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agôsto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+      MONTHS: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agôsto", "Setembro", "Outubro", "Novembro", "Dezembro"]
       SHORT_MONTHS: ["Jan", "Fev", "Março", "Abril", "Maio", "Junho", "Julho", "Agôsto", "Set", "Out", "Nov", "Dez"]
 
 # Romanian
@@ -97,7 +97,7 @@ ro:
     ARCHIVE_PLUS:
       NAME: "arhive"
       SHOW_MORE: "Afiseare tot &raquo;"
-      MONTHS_OF_THE_YEAR: ["Ianuarie", "Februarie", "Martie", "Aprilue", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"]
+      MONTHS: ["Ianuarie", "Februarie", "Martie", "Aprilue", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"]
       SHORT_MONTHS: ["Ian", "Feb", "Mar", "Apr", "Mai", "Iunie", "Iulie", "Aug", "Sept", "Oct", "Noem", "Dec"]
 
 # Russian
@@ -106,7 +106,7 @@ ru:
     ARCHIVE_PLUS:
       NAME: "архив"
       SHOW_MORE: "Показать еще &raquo;"
-      MONTHS_OF_THE_YEAR: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
+      MONTHS: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
       SHORT_MONTHS: ["Ianv", "Fev", "Mart", "Apr", "Mai", "Iiun", "Iiul", "Avg", "Sent", "Okt", "Noiabr", "Dek"]
 
 # Ukrainian
