@@ -15,6 +15,29 @@ de:
       SHOW_MORE: "Mehr anzeigen &raquo;"
       MONTHS: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
       SHORT_MONTHS: ["Jan", "Febr", "März", "Apr", "Mai", "Juni", "Juli", "Aug", "Sept", "Okt", "Nov", "Dez"]
+      GLOBAL_CONFIG: "Globale Einstellungen"
+      DEFAULT_CONFIG: "Standardeinstellungen für Archive Plus"
+      PLUGIN_STATUS: "Plugin Status"
+      BUILTIN_CSS: "Verwende mitgeliefertes CSS"
+      SHOW_NUMBER_OF_POSTS: "Zeige Gesamtanzahl der Beiträge"
+      SHOW_YEAR: "Zeige Jahr"
+      SHOW_MONTH: "Zeige Monat"
+      SHOW_POSTS: "Zeige Beiträge"
+      YEAR_LIMIT: "Anzahl vergangener Jahre"
+      YEAR_LIMIT_HELP: "Null setzen um alle Jahre anzuzeigen."
+      MONTH_LIMIT: "Anzahl vergangener Monate"
+      MONTH_LIMIT_HELP: "Null setzen um alle Monate anzuzeigen."
+      POST_ITEM_LIMIT: "Anzahl alter Beiträge"
+      POST_ITEM_LIMIT_HELP: "Null setzen um alle Beiträge anzuzeigen."
+      ORDER_DIRECTION: "Reihenfolge"
+      ORDER_TYPE: "Sortierung"
+      FILTER: "Filter"
+      FILTER_HELP: "Komma getrennte Liste von Kategorien-Werte Paare."
+      FILTER_PLACEHOLDER_KEY: "Kategorie"
+      FILTER_PLACEHOLDER_VALUE: "Blog"
+      FILTER_COMBINATOR: "Verknüpfung"
+      FILTER_COMBINATOR_AND: "Und - Boolsches &&"
+      FILTER_COMBINATOR_OR: "Oder - Boolsches ||"
 
 # Greek
 el:
@@ -33,6 +56,29 @@ en:
       SHOW_MORE: "Show more &raquo;"
       MONTHS: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
       SHORT_MONTHS: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+      GLOBAL_CONFIG: "Global plugin configurations"
+      DEFAULT_CONFIG: "Default values for Archive Plus configuration"
+      PLUGIN_STATUS: "Plugin status"
+      BUILTIN_CSS: "Use built in CSS"
+      SHOW_NUMBER_OF_POSTS: "Show number of posts"
+      SHOW_YEAR: "Show year"
+      SHOW_MONTH: "Show month"
+      SHOW_POSTS: "Show Posts"
+      YEAR_LIMIT: "Year limit"
+      YEAR_LIMIT_HELP: "Set to zero to switch off year limit."
+      MONTH_LIMIT: "Month limit"
+      MONTH_LIMIT_HELP: "Set to zero to switch off month limit."
+      POST_ITEM_LIMIT: "Post item limit"
+      POST_ITEM_LIMIT_HELP: "Set to zero to switch off item limit."
+      ORDER_DIRECTION: "Order Direction"
+      ORDER_TYPE: "Order Type"
+      FILTER: "Filter"
+      FILTER_HELP: "Comma separated list of taxonomy name pairs."
+      FILTER_PLACEHOLDER_KEY: "category"
+      FILTER_PLACEHOLDER_VALUE: "blog"
+      FILTER_COMBINATOR: "Filter Combinator"
+      FILTER_COMBINATOR_AND: "And - Boolean &&"
+      FILTER_COMBINATOR_OR: "Or - Boolean ||"
 
 # Spanish
 es:
