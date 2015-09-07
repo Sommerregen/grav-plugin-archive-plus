@@ -1,5 +1,5 @@
 name: Archive Plus
-version: 1.3.1
+version: 1.3.2
 description: "The **Archive Plus** plugin is an enhanced version of the [Grav Archives plugin](https://github.com/getgrav/grav-plugin-archives) with more configuration options and the ability to show a blogger like hierarchical archive menu for links grouped by month and/or year."
 icon: university
 author:
