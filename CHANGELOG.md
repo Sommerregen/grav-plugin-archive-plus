@@ -1,3 +1,12 @@
+# v1.3.2
+## 09/07/2015
+
+2. [](#improved)
+  * Added blueprints for Grav Admin plugin
+  * Corrected some variable names in languages.yaml [#5](https://github.com/Sommerregen/grav-plugin-archive-plus/pull/5)
+3. [](#bugfix)
+  * Fixed not working with Grav's Admin Panel [#4](https://github.com/Sommerregen/grav-plugin-archive-plus/issues/4)
+
 # v1.3.1
 ## 08/17/2015
 
