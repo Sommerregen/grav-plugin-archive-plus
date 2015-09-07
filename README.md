@@ -14,12 +14,13 @@
 
 ## About
 
-`Archive Plus` shares many features with the [`Grav Archives plugin`](https://github.com/getgrav/grav-plugin-archives), e.g. it automatically appends a `year` and `month_year` taxonomy to all pages and provides a `partials\archive_plus.html.twig` template, which you can include in a blog sidebar to render links into a year/month/post format useful for blogs, but enhances them in an intuitive way.
+`Archive Plus` shares many features with the [`Grav Archives plugin`](https://github.com/getgrav/grav-plugin-archives), e.g. it automatically appends a "year/month" taxonomy to all pages and provides a `partials\archive_plus.html.twig` template, which you can include in a blog sidebar to render links into a year/month/post format useful for blogs, but enhances them in an intuitive way.
 
 Currently it
 
  - [x] adds a blogger like hierarchical (year/month/post) archive menu
- - [x] has multi-language support **(requires Grav 0.9.33
+ - [x] has (full) multi-language support **(requires Grav 0.9.33+)**
+ - [x] integrates in Admin panel
  - [ ] provides a custom archive page (under development)
  - [x] and a per site configuration
 
