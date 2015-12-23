@@ -73,7 +73,7 @@ class ArchivePlusPlugin extends Plugin
         $this->config->set('plugins.archives.emulated', true);
 
         // Dynamically add the needed taxonomy types to the taxonomies config
-        $archive = $this->grav['language']->translate(['PLUGIN_ARCHIVE_PLUS.NAME']);
+        $archive = $this->grav['language']->translate(['PLUGINS.ARCHIVE_PLUS.NAME']);
         $taxonomy_config = array_merge((array)
             $this->config->get('site.taxonomies'), [$archive]);
         $this->config->set('site.taxonomies', $taxonomy_config);
