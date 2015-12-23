@@ -11,18 +11,22 @@ cz:
 de:
   PLUGINS:
     ARCHIVE_PLUS:
+      GLOBAL_CONFIG: "Globale Einstellungen"
+      SPECIFIC_CONFIG:  "Globale und seitenspezifische Einstellungen"
+      PLUGIN_STATUS: "Plugin Status"
+      BUILTIN_CSS: "Verwende mitgeliefertes CSS"
+
       NAME: "archiv"
       SHOW_MORE: "Mehr anzeigen &raquo;"
       MONTHS: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
       SHORT_MONTHS: ["Jan", "Febr", "März", "Apr", "Mai", "Juni", "Juli", "Aug", "Sept", "Okt", "Nov", "Dez"]
-      GLOBAL_CONFIG: "Globale Einstellungen"
-      DEFAULT_CONFIG: "Standardeinstellungen für Archive Plus"
-      PLUGIN_STATUS: "Plugin Status"
-      BUILTIN_CSS: "Verwende mitgeliefertes CSS"
+
+      SHOW: "Anzeige"
       SHOW_NUMBER_OF_POSTS: "Zeige Gesamtanzahl der Beiträge"
       SHOW_YEAR: "Zeige Jahr"
       SHOW_MONTH: "Zeige Monat"
       SHOW_POSTS: "Zeige Beiträge"
+
       YEAR_LIMIT: "Anzahl vergangener Jahre"
       YEAR_LIMIT_HELP: "Null setzen um alle Jahre anzuzeigen."
       MONTH_LIMIT: "Anzahl vergangener Monate"
@@ -52,18 +56,23 @@ el:
 en:
   PLUGINS:
     ARCHIVE_PLUS:
+      GLOBAL_CONFIG: "Global plugin configurations"
+      SPECIFIC_CONFIG: "Global and page specific configurations"
+      PLUGIN_STATUS: "Plugin status"
+      BUILTIN_CSS: "Use built in CSS"
+      ARCHIVE_PLUS: "Archive Plus"
+
       NAME: "archive"
       SHOW_MORE: "Show more &raquo;"
       MONTHS: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
       SHORT_MONTHS: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-      GLOBAL_CONFIG: "Global plugin configurations"
-      DEFAULT_CONFIG: "Default values for Archive Plus configuration"
-      PLUGIN_STATUS: "Plugin status"
-      BUILTIN_CSS: "Use built in CSS"
+
+      SHOW: "Show"
       SHOW_NUMBER_OF_POSTS: "Show number of posts"
       SHOW_YEAR: "Show year"
       SHOW_MONTH: "Show month"
       SHOW_POSTS: "Show Posts"
+
       YEAR_LIMIT: "Year limit"
       YEAR_LIMIT_HELP: "Set to zero to switch off year limit."
       MONTH_LIMIT: "Month limit"

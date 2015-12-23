@@ -12,146 +12,164 @@ bugs: https://github.com/sommerregen/grav-plugin-archive-plus/issues
 license: MIT/GPL
 
 form:
-  validation: strict
+  validation: loose
+
   fields:
-    global:
-      type: section
-      title: PLUGINS.ARCHIVE_PLUS.GLOBAL_CONFIG
-      underline: 1
+    tabs:
+      type: tabs
+      active: 1
 
       fields:
-        enabled:
-          type: toggle
-          label: PLUGINS.ARCHIVE_PLUS.PLUGIN_STATUS
-          highlight: 1
-          default: 1
-          options:
-            1: PLUGIN_ADMIN.ENABLED
-            0: PLUGIN_ADMIN.DISABLED
-          validate:
-            type: bool
+        archive_plus:
+          type: tab
+          title: PLUGINS.ARCHIVE_PLUS.ARCHIVE_PLUS
 
-        built_in_css:
-          type: toggle
-          label: PLUGINS.ARCHIVE_PLUS.BUILTIN_CSS
-          highlight: 1
-          default: 1
-          options:
-            1: PLUGIN_ADMIN.YES
-            0: PLUGIN_ADMIN.NO
-          validate:
-            type: bool
+          fields:
+            enabled:
+              type: toggle
+              label: PLUGINS.ARCHIVE_PLUS.PLUGIN_STATUS
+              highlight: 1
+              default: 1
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
 
-    default:
-      type: section
-      title: PLUGINS.ARCHIVE_PLUS.DEFAULT_CONFIG
-      underline: 1
+            built_in_css:
+              type: toggle
+              label: PLUGINS.ARCHIVE_PLUS.BUILTIN_CSS
+              highlight: 1
+              default: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
 
-      fields:
-        show.counter:
-          type: toggle
-          label: PLUGINS.ARCHIVE_PLUS.SHOW_NUMBER_OF_POSTS
-          default: 1
-          options:
-            1: PLUGIN_ADMIN.YES
-            0: PLUGIN_ADMIN.NO
-          validate:
-            type: bool
+        specific:
+          type: tab
+          title: PLUGINS.ARCHIVE_PLUS.SPECIFIC_CONFIG
 
-        show.year:
-          type: toggle
-          label: PLUGINS.ARCHIVE_PLUS.SHOW_YEAR
-          default: 1
-          options:
-            1: PLUGIN_ADMIN.YES
-            0: PLUGIN_ADMIN.NO
-          validate:
-            type: bool
+          fields:
+            # Not ready for production yet... :'-(
+            # show:
+            #   type: checkboxes
+            #   label: PLUGINS.ARCHIVE_PLUS.SHOW
+            #   # help: PLUGINS.ARCHIVE_PLUS.SHOW_HELP
+            #   default: [counter: true, year: true, month: true, items: true]
+            #   options:
+            #     counter: PLUGINS.ARCHIVE_PLUS.SHOW_NUMBER_OF_POSTS
+            #     year: PLUGINS.ARCHIVE_PLUS.SHOW_YEAR
+            #     month: PLUGINS.ARCHIVE_PLUS.SHOW_MONTH
+            #     items: PLUGINS.ARCHIVE_PLUS.SHOW_POSTS
+            #   use: keys
 
-        show.month:
-          type: toggle
-          label: PLUGINS.ARCHIVE_PLUS.SHOW_MONTH
-          default: 1
-          options:
-            1: PLUGIN_ADMIN.YES
-            0: PLUGIN_ADMIN.NO
-          validate:
-            type: bool
+            show.counter:
+              type: toggle
+              label: PLUGINS.ARCHIVE_PLUS.SHOW_NUMBER_OF_POSTS
+              default: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
 
-        show.items:
-          type: toggle
-          label: PLUGINS.ARCHIVE_PLUS.SHOW_POSTS
-          default: 1
-          options:
-            1: PLUGIN_ADMIN.YES
-            0: PLUGIN_ADMIN.NO
-          validate:
-            type: bool
+            show.year:
+              type: toggle
+              label: PLUGINS.ARCHIVE_PLUS.SHOW_YEAR
+              default: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
 
-        limit.year:
-          type: text
-          size: x-small
-          label: PLUGINS.ARCHIVE_PLUS.YEAR_LIMIT
-          default: 2
-          help: PLUGINS.ARCHIVE_PLUS.YEAR_LIMIT_HELP
-          validate:
-            type: number
-            min: 0
+            show.month:
+              type: toggle
+              label: PLUGINS.ARCHIVE_PLUS.SHOW_MONTH
+              default: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
 
-        limit.month:
-          type: text
-          size: x-small
-          label: PLUGINS.ARCHIVE_PLUS.MONTH_LIMIT
-          default: 12
-          help: PLUGINS.ARCHIVE_PLUS.MONTH_LIMIT_HELP
-          validate:
-            type: number
-            min: 0
+            show.items:
+              type: toggle
+              label: PLUGINS.ARCHIVE_PLUS.SHOW_POSTS
+              default: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
 
-        limit.items:
-          type: text
-          size: x-small
-          label: PLUGINS.ARCHIVE_PLUS.POST_ITEM_LIMIT
-          default: 40
-          help: PLUGINS.ARCHIVE_PLUS.POST_ITEM_LIMIT_HELP
-          validate:
-            type: number
-            min: 0
+            limit.year:
+              type: text
+              size: x-small
+              label: PLUGINS.ARCHIVE_PLUS.YEAR_LIMIT
+              default: 2
+              help: PLUGINS.ARCHIVE_PLUS.YEAR_LIMIT_HELP
+              validate:
+                type: number
+                min: 0
 
-        order.dir:
-          type: toggle
-          label: PLUGINS.ARCHIVE_PLUS.ORDER_DIRECTION
-          highlight: asc
-          default: desc
-          options:
-            asc: PLUGIN_ADMIN.ASCENDING
-            desc: PLUGIN_ADMIN.DESCENDING
+            limit.month:
+              type: text
+              size: x-small
+              label: PLUGINS.ARCHIVE_PLUS.MONTH_LIMIT
+              default: 12
+              help: PLUGINS.ARCHIVE_PLUS.MONTH_LIMIT_HELP
+              validate:
+                type: number
+                min: 0
 
-        order.by:
-          type: select
-          size: large
-          classes: fancy
-          label: PLUGINS.ARCHIVE_PLUS.ORDER_TYPE
-          options:
-            default: PLUGIN_ADMIN.DEFAULT_ORDERING_DEFAULT
-            folder: PLUGIN_ADMIN.DEFAULT_ORDERING_FOLDER
-            title: PLUGIN_ADMIN.DEFAULT_ORDERING_TITLE
-            date: PLUGIN_ADMIN.DEFAULT_ORDERING_DATE
+            limit.items:
+              type: text
+              size: x-small
+              label: PLUGINS.ARCHIVE_PLUS.POST_ITEM_LIMIT
+              default: 40
+              help: PLUGINS.ARCHIVE_PLUS.POST_ITEM_LIMIT_HELP
+              validate:
+                type: number
+                min: 0
 
-        filters:
-          type: array
-          size: large
-          label: PLUGINS.ARCHIVE_PLUS.FILTER
-          help: PLUGINS.ARCHIVE_PLUS.FILTER_HELP
-          placeholder_key: PLUGINS.ARCHIVE_PLUS.FILTER_PLACEHOLDER_KEY
-          placeholder_value: PLUGINS.ARCHIVE_PLUS.FILTER_PLACEHOLDER_VALUE
+            order.dir:
+              type: toggle
+              label: PLUGINS.ARCHIVE_PLUS.ORDER_DIRECTION
+              highlight: asc
+              default: desc
+              options:
+                asc: PLUGIN_ADMIN.ASCENDING
+                desc: PLUGIN_ADMIN.DESCENDING
 
-        filter_combinator:
-          type: select
-          size: medium
-          classes: fancy
-          label: PLUGINS.ARCHIVE_PLUS.FILTER_COMBINATOR
-          default: and
-          options:
-            and: PLUGINS.ARCHIVE_PLUS.FILTER_COMBINATOR_AND
-            or: PLUGINS.ARCHIVE_PLUS.FILTER_COMBINATOR_OR
+            order.by:
+              type: select
+              size: large
+              classes: fancy
+              label: PLUGINS.ARCHIVE_PLUS.ORDER_TYPE
+              default: default
+              options:
+                default: PLUGIN_ADMIN.DEFAULT_ORDERING_DEFAULT
+                folder: PLUGIN_ADMIN.DEFAULT_ORDERING_FOLDER
+                title: PLUGIN_ADMIN.DEFAULT_ORDERING_TITLE
+                date: PLUGIN_ADMIN.DEFAULT_ORDERING_DATE
+
+            filters:
+              type: array
+              size: large
+              label: PLUGINS.ARCHIVE_PLUS.FILTER
+              help: PLUGINS.ARCHIVE_PLUS.FILTER_HELP
+              placeholder_key: PLUGINS.ARCHIVE_PLUS.FILTER_PLACEHOLDER_KEY
+              placeholder_value: PLUGINS.ARCHIVE_PLUS.FILTER_PLACEHOLDER_VALUE
+
+            filter_combinator:
+              type: select
+              size: medium
+              classes: fancy
+              label: PLUGINS.ARCHIVE_PLUS.FILTER_COMBINATOR
+              default: and
+              options:
+                and: PLUGINS.ARCHIVE_PLUS.FILTER_COMBINATOR_AND
+                or: PLUGINS.ARCHIVE_PLUS.FILTER_COMBINATOR_OR
