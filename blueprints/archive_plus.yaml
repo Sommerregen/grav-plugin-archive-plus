@@ -1,0 +1,76 @@
+form:
+  validation: loose
+
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        advanced:
+          type: tab
+          title: PLUGIN_ADMIN.ADVANCED
+
+          fields:
+            archive_plus:
+              type: section
+              title: PLUGINS.ARCHIVE_PLUS.ARCHIVE_PLUS
+              underline: true
+
+              fields:
+                header.archive_plus.enabled:
+                  type: toggle
+                  toggleable: true
+                  label: PLUGIN_ADMIN.ENABLED
+                  highlight: 1
+                  '@config-default': "plugins.archive_plus.enabled"
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool
+
+                header.archive_plus.order.dir:
+                  type: toggle
+                  toggleable: true
+                  label: PLUGINS.ARCHIVE_PLUS.ORDER_DIRECTION
+                  highlight: asc
+                  '@config-default': "plugins.archive_plus.order.dir"
+                  options:
+                    asc: PLUGIN_ADMIN.ASCENDING
+                    desc: PLUGIN_ADMIN.DESCENDING
+
+                header.archive_plus.order.by:
+                  type: select
+                  toggleable: true
+                  size: large
+                  classes: fancy
+                  label: PLUGINS.ARCHIVE_PLUS.ORDER_TYPE
+                  '@config-default': "plugins.archive_plus.order.by"
+                  options:
+                    default: PLUGIN_ADMIN.DEFAULT_ORDERING_DEFAULT
+                    folder: PLUGIN_ADMIN.DEFAULT_ORDERING_FOLDER
+                    title: PLUGIN_ADMIN.DEFAULT_ORDERING_TITLE
+                    date: PLUGIN_ADMIN.DEFAULT_ORDERING_DATE
+
+                header.archive_plus.filters:
+                  type: array
+                  toggleable: true
+                  size: large
+                  label: PLUGINS.ARCHIVE_PLUS.FILTER
+                  help: PLUGINS.ARCHIVE_PLUS.FILTER_HELP
+                  '@config-default': "plugins.archive_plus.filters"
+                  placeholder_key: PLUGINS.ARCHIVE_PLUS.FILTER_PLACEHOLDER_KEY
+                  placeholder_value: PLUGINS.ARCHIVE_PLUS.FILTER_PLACEHOLDER_VALUE
+
+                header.archive_plus.filter_combinator:
+                  type: select
+                  toggleable: true
+                  size: medium
+                  classes: fancy
+                  label: PLUGINS.ARCHIVE_PLUS.FILTER_COMBINATOR
+                  '@config-default': "plugins.archive_plus.filter_combinator"
+                  default: and
+                  options:
+                    and: PLUGINS.ARCHIVE_PLUS.FILTER_COMBINATOR_AND
+                    or: PLUGINS.ARCHIVE_PLUS.FILTER_COMBINATOR_OR
