@@ -89,7 +89,6 @@ es:
       MONTHS: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
       SHORT_MONTHS: ["Enero", "Feb", "Marzo", "Abr", "Mayo", "Jun", "Jul", "Agosto", "Sept", "Oct", "Nov", "Dic"]
 
-
 # French
 fr:
   PLUGINS:
@@ -98,6 +97,29 @@ fr:
       SHOW_MORE: "Afficher plus &raquo;"
       MONTHS: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
       SHORT_MONTHS: ["Janv", "Févr", "Mars", "Avril", "Mai", "Juin", "Juil", "Août", "Sept", "Oct", "Nov", "Déc"]
+      GLOBAL_CONFIG: "Configurations générales du plugin"
+      DEFAULT_CONFIG: "Valeurs par défaut pour la configuration d'Archive Plus"
+      PLUGIN_STATUS: "Statut du plugin"
+      BUILTIN_CSS: "Utiliser les CSS intégrés"
+      SHOW_NUMBER_OF_POSTS: "Afficher le nombre de publications"
+      SHOW_YEAR: "Afficher l'année"
+      SHOW_MONTH: "Afficher le mois"
+      SHOW_POSTS: "Afficher les publications"
+      YEAR_LIMIT: "Limite d'années"
+      YEAR_LIMIT_HELP: "Définir sur zéro pour annuler la limite d'années."
+      MONTH_LIMIT: "Limite de mois"
+      MONTH_LIMIT_HELP: "Définir sur zéro pour annuler la limite de mois."
+      POST_ITEM_LIMIT: "Limite d'élément à publier"
+      POST_ITEM_LIMIT_HELP: "Définir sur zéro pour annuler la limite d'éléments."
+      ORDER_DIRECTION: "Sens de classement"
+      ORDER_TYPE: "Type de classement"
+      FILTER: "Filtre"
+      FILTER_HELP: "Liste des paires de noms de taxonomie séparée par des virgules."
+      FILTER_PLACEHOLDER_KEY: "catégorie"
+      FILTER_PLACEHOLDER_VALUE: "blog"
+      FILTER_COMBINATOR: "Filtre Combinateur"
+      FILTER_COMBINATOR_AND: "And - Booléen &&"
+      FILTER_COMBINATOR_OR: "Or - Booléen ||"
 
 # Italian
 it:
