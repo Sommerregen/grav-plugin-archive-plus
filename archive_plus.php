@@ -155,26 +155,28 @@ class ArchivePlusPlugin extends Plugin
             $filters = (array) $this->config->get('plugins.archive_plus.filters');
             $operator = $this->config->get('plugins.archive_plus.filter_combinator');
 
-            if (count($filters) > 0) {
+            if ( ! $filters || (count($filters) == 1 && !reset($filters))){
+                $collection = $pages->all();
+            } else {
                 $collection = new Collection();
                 $collection->append(
                     $taxonomy_map->findTaxonomy($filters, $operator)->toArray()
                 );
+            }
 
-                // reorder the collection based on settings
-                $collection = $collection->order(
-                    $this->config->get('plugins.archive_plus.order.by'),
-                    $this->config->get('plugins.archive_plus.order.dir')
-                );
+            // reorder the collection based on settings
+            $collection = $collection->order(
+                $this->config->get('plugins.archive_plus.order.by'),
+                $this->config->get('plugins.archive_plus.order.dir')
+            );
 
-                // Loop over new collection of pages that match filters
-                foreach ($collection as $page) {
-                    // Update the start date if the page date is older
-                    $start_date = $page->date() < $start_date ? $page->date() : $start_date;
+            // Loop over new collection of pages that match filters
+            foreach ($collection as $page) {
+                // Update the start date if the page date is older
+                $start_date = $page->date() < $start_date ? $page->date() : $start_date;
 
-                    list($year, $month) = explode(' ', date('Y n', $page->date()));
-                    $archives[$year][$month][] = $page;
-                }
+                list($year, $month) = explode(' ', date('Y n', $page->date()));
+                $archives[$year][$month][] = $page;
             }
 
             // Limit output of archive block depending on number of items,
@@ -190,36 +192,40 @@ class ArchivePlusPlugin extends Plugin
             // Limit items in the output based on plugin settings
             foreach ($archives as $year => &$months) {
                 $num = count($months);
-                if ($limits['month'] >= $user_limits['month'] || $limits['items'] >= $user_limits['items']) {
-                    unset($archives[$year]);
-                    $show_more = true;
-                    continue;
-
-                } elseif ($limits['month'] + $num > $user_limits['month']) {
-                    $length = $user_limits['month'] - $limits['month'];
-                    $months = array_slice($months, 0, $length, true);
-                    $show_more = true;
-                }
-
-                $limits['month'] += $num;
-                foreach ($months as $month => &$pages) {
-                    $num = count($pages);
-                    if ($limits['items'] > $user_limits['items']) {
-                        unset($archives[$year][$month]);
+                if($limits['month'] != 0) {
+                    if ($limits['month'] >= $user_limits['month'] || $limits['items'] >= $user_limits['items']) {
+                        unset($archives[$year]);
                         $show_more = true;
+                        continue;
 
-                    } elseif ($limits['items'] + $num > $user_limits['items']) {
-                        $length = $user_limits['items'] - $limits['items'];
-                        $pages = array_slice($pages, 0, $length, true);
-                        if ($length == 0) {
-                            unset($archives[$year][$month]);
-                        }
-
-                        $limits['items'] += $num;
-                        $limits['month'] = $user_limits['month'] + 1;
+                    } elseif ($limits['month'] + $num > $user_limits['month']) {
+                        $length = $user_limits['month'] - $limits['month'];
+                        $months = array_slice($months, 0, $length, true);
                         $show_more = true;
                     }
-                    $limits['items'] += $num;
+                }
+
+                if($limits['items'] != 0) {
+                    $limits['month'] += $num;
+                    foreach ($months as $month => &$pages) {
+                        $num = count($pages);
+                        if ($limits['items'] > $user_limits['items']) {
+                            unset($archives[$year][$month]);
+                            $show_more = true;
+
+                        } elseif ($limits['items'] + $num > $user_limits['items']) {
+                            $length = $user_limits['items'] - $limits['items'];
+                            $pages = array_slice($pages, 0, $length, true);
+                            if ($length == 0) {
+                                unset($archives[$year][$month]);
+                            }
+
+                            $limits['items'] += $num;
+                            $limits['month'] = $user_limits['month'] + 1;
+                            $show_more = true;
+                        }
+                        $limits['items'] += $num;
+                    }
                 }
             }
 
