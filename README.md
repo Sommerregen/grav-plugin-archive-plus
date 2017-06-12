@@ -102,7 +102,7 @@ Thanks!
 
 ## License
 
-Copyright (c) 2015-2016 [Benjamin Regler][github]. See also the list of [contributors] who participated in this project. A lot of credits also goes to [Andy Miller](https://github.com/getgrav/) who wrote the [Archives plugin](https://github.com/getgrav/grav-plugin-archives) this project is based on.
+Copyright (c) 2015-2017 [Benjamin Regler][github]. See also the list of [contributors] who participated in this project. A lot of credits also goes to [Andy Miller](https://github.com/getgrav/) who wrote the [Archives plugin](https://github.com/getgrav/grav-plugin-archives) this project is based on.
 
 [Dual-licensed](LICENSE) for use under the terms of the [MIT][mit-license] or [GPLv3][gpl-license] licenses.
 

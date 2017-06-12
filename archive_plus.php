@@ -13,7 +13,7 @@
  * @version     1.3.2
  * @link        <https://github.com/sommerregen/grav-plugin-archive-plus>
  * @author      Benjamin Regler <sommerregen@benjamin-regler.de>
- * @copyright   2015-2016, Benjamin Regler
+ * @copyright   2015-2017, Benjamin Regler
  * @license     <http://opensource.org/licenses/MIT>        MIT
  * @license     <http://opensource.org/licenses/GPL-3.0>    GPLv3
  */
@@ -128,7 +128,7 @@ class ArchivePlusPlugin extends Plugin
           $key = $language->translate(['PLUGINS.ARCHIVE_PLUS.NAME'], [$lang]);
           $month = strtolower($language->translateArray('PLUGINS.ARCHIVE_PLUS.SHORT_MONTHS', $index, [$lang]));
 
-          // Track month taxonomy in "jan_2015" and year in "2015" format
+          // Track month taxonomy in "jan_2016" and year in "2016" format
           $taxonomy[$key] = ["{$month}_{$year}", $year];
         }
       }
