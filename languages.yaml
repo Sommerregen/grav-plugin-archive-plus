@@ -174,9 +174,9 @@ ro:
   PLUGINS:
     ARCHIVE_PLUS:
       NAME: "arhive"
-      SHOW_MORE: "Afiseare tot &raquo;"
-      MONTHS: ["Ianuarie", "Februarie", "Martie", "Aprilue", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"]
-      SHORT_MONTHS: ["Ian", "Feb", "Mar", "Apr", "Mai", "Iunie", "Iulie", "Aug", "Sept", "Oct", "Noem", "Dec"]
+      SHOW_MORE: "Afișează mai multe &raquo;"
+      MONTHS: ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"]
+      SHORT_MONTHS: ["Ian", "Feb", "Mar", "Apr", "Mai", "Iunie", "Iulie", "Aug", "Sept", "Oct", "Noi", "Dec"]
 
 # Russian
 ru:
