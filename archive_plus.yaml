@@ -3,7 +3,7 @@
 enabled: true                 # Set to false to disable this plugin completely
 built_in_css: true            # Use built-in CSS of the plugin
 
-# Default values for Archive Plus configuration
+# Global and page specific configurations
 
 show:
   counter: true               # Toggle to show number of items before the link

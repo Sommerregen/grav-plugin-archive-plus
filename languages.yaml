@@ -11,18 +11,22 @@ cz:
 de:
   PLUGINS:
     ARCHIVE_PLUS:
+      GLOBAL_CONFIG: "Globale Einstellungen"
+      SPECIFIC_CONFIG:  "Globale und seitenspezifische Einstellungen"
+      PLUGIN_STATUS: "Plugin Status"
+      BUILTIN_CSS: "Verwende mitgeliefertes CSS"
+
       NAME: "archiv"
       SHOW_MORE: "Mehr anzeigen &raquo;"
       MONTHS: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
       SHORT_MONTHS: ["Jan", "Febr", "März", "Apr", "Mai", "Juni", "Juli", "Aug", "Sept", "Okt", "Nov", "Dez"]
-      GLOBAL_CONFIG: "Globale Einstellungen"
-      DEFAULT_CONFIG: "Standardeinstellungen für Archive Plus"
-      PLUGIN_STATUS: "Plugin Status"
-      BUILTIN_CSS: "Verwende mitgeliefertes CSS"
+
+      SHOW: "Anzeige"
       SHOW_NUMBER_OF_POSTS: "Zeige Gesamtanzahl der Beiträge"
       SHOW_YEAR: "Zeige Jahr"
       SHOW_MONTH: "Zeige Monat"
       SHOW_POSTS: "Zeige Beiträge"
+
       YEAR_LIMIT: "Anzahl vergangener Jahre"
       YEAR_LIMIT_HELP: "Null setzen um alle Jahre anzuzeigen."
       MONTH_LIMIT: "Anzahl vergangener Monate"
@@ -52,18 +56,23 @@ el:
 en:
   PLUGINS:
     ARCHIVE_PLUS:
+      GLOBAL_CONFIG: "Global plugin configurations"
+      SPECIFIC_CONFIG: "Global and page specific configurations"
+      PLUGIN_STATUS: "Plugin status"
+      BUILTIN_CSS: "Use built in CSS"
+      ARCHIVE_PLUS: "Archive Plus"
+
       NAME: "archive"
       SHOW_MORE: "Show more &raquo;"
       MONTHS: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
       SHORT_MONTHS: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-      GLOBAL_CONFIG: "Global plugin configurations"
-      DEFAULT_CONFIG: "Default values for Archive Plus configuration"
-      PLUGIN_STATUS: "Plugin status"
-      BUILTIN_CSS: "Use built in CSS"
+
+      SHOW: "Show"
       SHOW_NUMBER_OF_POSTS: "Show number of posts"
       SHOW_YEAR: "Show year"
       SHOW_MONTH: "Show month"
       SHOW_POSTS: "Show Posts"
+
       YEAR_LIMIT: "Year limit"
       YEAR_LIMIT_HELP: "Set to zero to switch off year limit."
       MONTH_LIMIT: "Month limit"
@@ -89,7 +98,6 @@ es:
       MONTHS: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
       SHORT_MONTHS: ["Enero", "Feb", "Marzo", "Abr", "Mayo", "Jun", "Jul", "Agosto", "Sept", "Oct", "Nov", "Dic"]
 
-
 # French
 fr:
   PLUGINS:
@@ -98,6 +106,30 @@ fr:
       SHOW_MORE: "Afficher plus &raquo;"
       MONTHS: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
       SHORT_MONTHS: ["Janv", "Févr", "Mars", "Avril", "Mai", "Juin", "Juil", "Août", "Sept", "Oct", "Nov", "Déc"]
+
+      GLOBAL_CONFIG: "Configurations générales du plugin"
+      DEFAULT_CONFIG: "Valeurs par défaut pour la configuration d'Archive Plus"
+      PLUGIN_STATUS: "Statut du plugin"
+      BUILTIN_CSS: "Utiliser les CSS intégrés"
+      SHOW_NUMBER_OF_POSTS: "Afficher le nombre de publications"
+      SHOW_YEAR: "Afficher l'année"
+      SHOW_MONTH: "Afficher le mois"
+      SHOW_POSTS: "Afficher les publications"
+      YEAR_LIMIT: "Limite d'années"
+      YEAR_LIMIT_HELP: "Définir sur zéro pour annuler la limite d'années."
+      MONTH_LIMIT: "Limite de mois"
+      MONTH_LIMIT_HELP: "Définir sur zéro pour annuler la limite de mois."
+      POST_ITEM_LIMIT: "Limite d'élément à publier"
+      POST_ITEM_LIMIT_HELP: "Définir sur zéro pour annuler la limite d'éléments."
+      ORDER_DIRECTION: "Sens de classement"
+      ORDER_TYPE: "Type de classement"
+      FILTER: "Filtre"
+      FILTER_HELP: "Liste des paires de noms de taxonomie séparée par des virgules."
+      FILTER_PLACEHOLDER_KEY: "catégorie"
+      FILTER_PLACEHOLDER_VALUE: "blog"
+      FILTER_COMBINATOR: "Filtre Combinateur"
+      FILTER_COMBINATOR_AND: "And - Booléen &&"
+      FILTER_COMBINATOR_OR: "Or - Booléen ||"
 
 # Italian
 it:
@@ -142,9 +174,9 @@ ro:
   PLUGINS:
     ARCHIVE_PLUS:
       NAME: "arhive"
-      SHOW_MORE: "Afiseare tot &raquo;"
-      MONTHS: ["Ianuarie", "Februarie", "Martie", "Aprilue", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"]
-      SHORT_MONTHS: ["Ian", "Feb", "Mar", "Apr", "Mai", "Iunie", "Iulie", "Aug", "Sept", "Oct", "Noem", "Dec"]
+      SHOW_MORE: "Afișează mai multe &raquo;"
+      MONTHS: ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"]
+      SHORT_MONTHS: ["Ian", "Feb", "Mar", "Apr", "Mai", "Iunie", "Iulie", "Aug", "Sept", "Oct", "Noi", "Dec"]
 
 # Russian
 ru:

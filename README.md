@@ -14,7 +14,7 @@
 
 ## About
 
-`Archive Plus` shares many features with the [`Grav Archives plugin`](https://github.com/getgrav/grav-plugin-archives), e.g. it automatically appends a "year/month" taxonomy to all pages and provides a `partials\archive_plus.html.twig` template, which you can include in a blog sidebar to render links into a year/month/post format useful for blogs, but enhances them in an intuitive way.
+`Archive Plus` shares many features with the [`Grav Archives plugin`](https://github.com/getgrav/grav-plugin-archives), e.g. it automatically appends a "year/month" taxonomy to all pages and provides a `plugins/archiv_plus/archive_plus.html.twig` template, which you can include in a blog sidebar to render links into a year/month/post format useful for blogs, but enhances them in an intuitive way.
 
 Currently it
 
@@ -48,7 +48,7 @@ The `Archive Plus` plugin comes with some sensible default configuration, that a
 enabled: true                 # Set to false to disable this plugin completely
 built_in_css: true            # Use built-in CSS of the plugin
 
-# Default values for Archive Plus configuration.
+# Global and page specific configurations
 
 show:
   counter: true               # Toggle to show number of items before the link
@@ -76,13 +76,13 @@ If you need to change any value, then the best process is to copy the [archive_p
 
 Something you might want to do is to override the look and feel of the archives, and with Grav it is super easy.
 
-Copy the template file [templates/partials/archive_plus.html.twig](templates/partials/archive_plus.html.twig) into the `templates/partials` folder of your custom theme, and that is it.
+Copy the template file [templates/plugins/archiv_plus/archive_plus.html.twig](templates/plugins/archiv_plus/archive_plus.html.twig) into the `templates/partials` folder of your custom theme, and that is it.
 
-    user/themes/custom-theme/templates/partials/archive_plus.html.twig
+    user/themes/custom-theme/templates/plugins/archiv_plus/archive_plus.html.twig
 
 You can now edit the override and tweak it however you prefer.
 
-> **Note:** Don't touch or edit the template file [templates/partials/archives.html.twig](templates/partials/archives.html.twig) in the `templates/partials` folder! This file serves as a compatibility fallback for those themes which expect the Archives plugin to be installed.
+> **Note:** Don't touch or edit the template file [templates/plugins/archiv_plus/archives.html.twig](templates/plugins/archiv_plus/archives.html.twig) in the `templates/partials` folder! This file serves as a compatibility fallback for those themes which expect the Archives plugin to be installed.
 
 ## Contributing
 
@@ -102,7 +102,7 @@ Thanks!
 
 ## License
 
-Copyright (c) 2015 [Benjamin Regler][github]. See also the list of [contributors] who participated in this project. A lot of credits also goes to [Andy Miller](https://github.com/getgrav/) who wrote the [Archives plugin](https://github.com/getgrav/grav-plugin-archives) this project is based on.
+Copyright (c) 2015-2017 [Benjamin Regler][github]. See also the list of [contributors] who participated in this project. A lot of credits also goes to [Andy Miller](https://github.com/getgrav/) who wrote the [Archives plugin](https://github.com/getgrav/grav-plugin-archives) this project is based on.
 
 [Dual-licensed](LICENSE) for use under the terms of the [MIT][mit-license] or [GPLv3][gpl-license] licenses.
 

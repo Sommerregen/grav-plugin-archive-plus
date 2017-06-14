@@ -1,12 +1,14 @@
+{% set archive_plus_config = archive_plus.data() %}
+
 {# Setup block #}
-{% if not (archive_plus.show.year or archive_plus.show.month) %}
+{% if not (archive_plus_config.show.year or archive_plus_config.show.month) %}
   <ul class="archive-plus last">
 {% else %}
   <ul class="archive-plus">
 {% endif %}
 
 {# Iterate over all data #}
-{% for year ,months in archive_plus.data if months|length > 0  %}
+{% for year, months in archive_plus_config.data if months|length > 0  %}
   {# Set current year #}
   {% set year_index = loop.index %}
   {% if page.date|date('Y') == year %}
@@ -16,10 +18,10 @@
   {% endif %}
 
   {# Toggle year + BEGIN: Wrap list #}
-  {% if archive_plus.show.year %}
+  {% if archive_plus_config.show.year %}
     <li>
       <input type="checkbox" id="input-archive-{{ year_index }}" {{ checked }}/>
-      {% if archive_plus.show.counter %}
+      {% if archive_plus_config.show.counter %}
         {# Calculate total number of posts #}
         {% set count = 0 %}
         {% for month,items in months %}
@@ -35,7 +37,7 @@
         <span class="archive_year">{{ year }}</span>
       </a>
 
-      {% if archive_plus.show.month %}
+      {% if archive_plus_config.show.month %}
         <ul>
       {% else %}
         <ul class="last">
@@ -51,13 +53,13 @@
     {% endif %}
 
     {# Toggle month + BEGIN: Wrap list #}
-    {% if archive_plus.show.month %}
+    {% if archive_plus_config.show.month %}
       <li>
-        {% if archive_plus.show.items %}
+        {% if archive_plus_config.show.items %}
           <input type="checkbox" id="input-archive-{{ year_index }}-{{ loop.index }}" {{ checked }}/>
         {% endif %}
 
-        {% if archive_plus.show.counter %}
+        {% if archive_plus_config.show.counter %}
           <label for="input-archive-{{ year_index }}-{{ loop.index }}" class="label counter">{{ items|length }}</label>
         {% else %}
           <label for="input-archive-{{ year_index }}-{{ loop.index }}"></label>
@@ -72,7 +74,7 @@
         <ul class="last">
     {% endif %}
 
-    {% if archive_plus.show.items %}
+    {% if archive_plus_config.show.items %}
       {% for item in items %}
         {# Label active link #}
         {% set active = '' %}
@@ -87,18 +89,18 @@
     {% endif %}
 
     {# END: Wrap list (month) #}
-    {% if archive_plus.show.month %}
+    {% if archive_plus_config.show.month %}
       </ul></li>
     {% endif %}
   {% endfor %}
 
   {# END: Wrap list (year) #}
-  {% if archive_plus.show.year %}
+  {% if archive_plus_config.show.year %}
     </ul></li>
   {% endif %}
 {% endfor %}
 </ul>
 
-{% if archive_plus.show_more %}
+{% if archive_plus_config.show_more %}
   <a class="button" href="{{ base_url }}/{{ 'PLUGINS.ARCHIVE_PLUS.NAME'|t }}{{ config.system.param_sep }}">{{ 'PLUGINS.ARCHIVE_PLUS.SHOW_MORE'|t }}</a>
 {% endif %}
