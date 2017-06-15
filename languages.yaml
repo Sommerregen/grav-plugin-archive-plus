@@ -177,10 +177,39 @@ pt:
 ro:
   PLUGINS:
     ARCHIVE_PLUS:
-      NAME: "arhive"
-      SHOW_MORE: "Afișează mai multe &raquo;"
+      GLOBAL_CONFIG: "Setări globale"
+      SPECIFIC_CONFIG: "Setări globale și paginale"
+      PLUGIN_STATUS: "Statut modul"
+      BUILTIN_CSS: "Folosește CSS-ul inclus"
+      ARCHIVE_PLUS: "Arhive Plus"
+
+      NAME: "Arhive"
+      SHOW_MORE: "Arată mai multe &raquo;"
       MONTHS: ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"]
-      SHORT_MONTHS: ["Ian", "Feb", "Mar", "Apr", "Mai", "Iunie", "Iulie", "Aug", "Sept", "Oct", "Noi", "Dec"]
+      SHORT_MONTHS: ["Ian", "Feb", "Mar", "Apr", "Mai", "Iun", "Iul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+      SHOW: "Arată"
+      SHOW_NUMBER_OF_POSTS: "Arată numărul postărilor"
+      SHOW_YEAR: "Arată anul"
+      SHOW_MONTH: "Arată luna"
+      SHOW_POSTS: "Arată postările"
+
+      YEAR_LIMIT: "Limita de ani"
+      YEAR_LIMIT_HELP: "Setează 0 pentru a anula limita anilor."
+      MONTH_LIMIT: "Limita lunilor"
+      MONTH_LIMIT_HELP: "Setează 0 pentru a anula limita lunilor."
+      POST_ITEM_LIMIT: "Limita postărilor"
+      POST_ITEM_LIMIT_HELP: "Setează 0 pentru a anula limita postărilor."
+      ORDER_DIRECTION: "Direcția ordonării"
+      ORDER_TYPE: "Tipul ordonării"
+      FILTER: "Filtru"
+      FILTER_HELP: "Valori de taxonomie separate prin virgulă."
+      FILTER_PLACEHOLDER_KEY: "categorie"
+      FILTER_PLACEHOLDER_VALUE: "blog"
+      FILTER_COMBINATOR: "Combinator filtru"
+      FILTER_COMBINATOR_AND: "Și - Boolean &&"
+      FILTER_COMBINATOR_OR: "Sau - Boolean ||"
+
 
 # Russian
 ru:
