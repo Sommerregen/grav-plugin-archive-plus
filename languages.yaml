@@ -137,6 +137,15 @@ pt:
       MONTHS: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agôsto", "Setembro", "Outubro", "Novembro", "Dezembro"]
       SHORT_MONTHS: ["Jan", "Fev", "Março", "Abril", "Maio", "Junho", "Julho", "Agôsto", "Set", "Out", "Nov", "Dez"]
 
+# Portuguese Brazil
+pt-BR:
+  PLUGINS:
+    ARCHIVE_PLUS:
+      NAME: "arquivo"
+      SHOW_MORE: "Mostrar mais &raquo;"
+      MONTHS: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+      SHORT_MONTHS: ["Jan", "Fev", "Março", "Abril", "Maio", "Junho", "Julho", "Agôsto", "Set", "Out", "Nov", "Dez"]
+      
 # Romanian
 ro:
   PLUGINS:
