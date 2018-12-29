@@ -113,9 +113,9 @@ nl:
   PLUGINS:
     ARCHIVE_PLUS:
       NAME: "archief"
-      SHOW_MORE: "Meer bekijk &raquo;"
-      MONTHS: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"]
-      SHORT_MONTHS: ["Jan", "Feb", "Maart", "Apr", "Mei", "Juni", "Juli", "Aug", "Sept", "Okt", "Nov", "Dec"]
+      SHOW_MORE: "Bekijk meer &raquo;"
+      MONTHS: ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"]
+      SHORT_MONTHS: ["jan", "feb", "maa", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"]
 
 
 # Polish
